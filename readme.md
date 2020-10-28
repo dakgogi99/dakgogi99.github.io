@@ -1,2 +1,2 @@
 # It's Suna's Portfolio
-[go Portfolio](dakgogi99.github.io)
+[go Portfolio](https://dakgogi99.github.io)
