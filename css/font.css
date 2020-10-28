@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url(font/NanumSquareB.ttf)
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url(font/NanumSquareEB.ttf)
+}
+
+@font-face {
+  font-family: NanumSquareL;
+  src: url(font/NanumSquareL.ttf)
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url(font/NanumSquareR.ttf)
+}
+
+/*font*/
+body {
+  font: 16px NanumSquareR;
+  color: #000
+}

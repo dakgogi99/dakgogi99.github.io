@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+header {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  background-color: #ffd940;
+  background-image: url(../img/main_bg_m.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+/*  background-size: 1200px 660px;*/
+  background-size: contain;
+  overflow: hidden;
+}
+.inner h1 {
+  left: 5%;
+}
+.inner .gnb {
+  right: 5%
+}
+.inner .gnb a {
+  margin-left: 20px;
+}
+.visual h2 {
+  font-family: NanumSquareEB;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 400px;
+}
+#web,
+#edit {
+  width: 70%;
+  height: 100%;
+  margin-left: 15%
+}
+#web ul .work,
+#edit ul .work {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  float: none
+}
+/*edit img*/
+.work p {
+  line-height: 200px;
+}
+.webmodal,
+.editmodal {
+  width: 80%;
+}
+.w-modal .modal-contents,
+.e-modal .modal-contents {
+  width: 90%;
+}
+
+.modal-contents img {
+  width: 100%;
+}

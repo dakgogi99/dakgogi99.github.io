@@ -1,0 +1,662 @@
+@charset "utf-8";
+@import url(all.min.css);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR);
+@import url(normalize.css);
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #0B0D0C;
+}
+.serif {
+  font-family: 'Noto Serif KR', sans-serif;
+}
+header .h-fix {
+  position: fixed;
+}
+main .wrap {
+  width: 1760px;
+}
+.content {
+  position: relative;
+/*  height: 100%;*/
+  height: 100vh;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+/*고정메뉴*/
+header .h-fix {
+  z-index: 4
+}
+header .h-fix .logo {
+  position: fixed;
+  left: 80px;
+  top: 50px;
+  width: 402px;
+  height: 163px;
+}
+.h-fix .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo_white.png) no-repeat;
+  z-index: 2
+}
+
+/*gnb 메인메뉴*/
+.h-fix .gnb {
+  position: fixed;
+  top: 50px;
+  right: 270px;
+  float: left
+}
+.h-fix .gnb a {
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 0 20px;
+}
+
+/*왼쪽 네비게이션 메뉴*/
+.h-fix .side {
+  position: fixed;
+  left: 80px;
+  top: 460px;
+  width: 160px;
+  height: 15px
+}
+.side li {
+  margin-bottom: 15px;
+}
+.side li a {
+  float: left;
+  padding-right: 10px;
+}
+.side li a span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-radius: 7px;
+  border: 1px solid #fff
+}
+.side li div {
+  display: none;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-size: 13px
+}
+/*jquery*/
+.side a span.on {
+  background: #fff
+}
+.side div.on {
+  display: block;
+}
+
+/*햄버거 메뉴*/
+.h-fix .ham-btn {
+  position: fixed;
+  top: 50px;
+  right: 80px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ec2024;
+  box-shadow: 0 0 3px #432929;
+  z-index: 5  
+}
+.h-fix .ham-btn a {
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 60px
+}
+.ham-btn-on > div {
+  position: absolute;
+  left: 20px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+.ham-btn-on .line1 {
+  top: 22px;
+}
+.ham-btn-on .line2 {
+  top: 29px;
+}
+.ham-btn-on .line3 {
+  top: 36px;
+}
+
+.ham-btn-off > div {
+  position: absolute;
+  left: 20px;
+  top: 29px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+.ham-btn-off .line1 {
+  transform: rotate(-45deg);
+}
+.ham-btn-off .line2 {
+  display: none
+}
+.ham-btn-off .line3 {
+  transform: rotate(45deg)
+}
+
+/*햄버거 메뉴 on 할때 전체 메뉴*/
+.h-fix .ham-menu {
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  z-index: 4
+}
+.ham-menu .ham-con {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  background: #0B0D0C;
+}
+
+.ham-con article {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 80px 0 0 60px;
+}
+.ham-con article:nth-child(1){
+  position: absolute;
+  width: 50%;
+  height: 480px;
+  left: 0;
+  top: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.ham-con article:nth-child(2){
+  position: absolute;
+  width: 50%;
+  height: 480px;
+  left: 50%;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.ham-con article:nth-child(3) {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 0;
+  top: 480px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.ham-con article:nth-child(4) {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 480px
+}
+.ham-con article:hover {
+  background: #ffc74a;
+  transition: all 0.5s
+}
+.ham-con article:hover h4 {
+  color: #0B0D0C;
+}
+.ham-con article:hover a {
+  color: #0B0D0C;
+}
+.ham-con article h4 {
+  position: relative;
+  display: inline;
+}
+.ham-con article h4:before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0B0D0C;
+  transition: all 0.4s ease-out
+}
+.ham-con article:hover h4:before {
+  width: 100%;
+  transform-origin: left
+}
+.ham-con article h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: normal;
+}
+.ham-con article .sub-m {
+  margin-top: 30px;
+}
+.ham-con article a {
+  font-size: 18px;
+  font-weight: normal;
+  display: block;
+  color: #fff;
+  line-height: 1.8;
+}
+.ham-con article a:hover {
+  color: #fff;
+  font-weight: normal;
+}
+.ham-menu .ham-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  background: url(../img/brand_sub_slide0.png) no-repeat bottom center / cover;
+}
+.ham-menu .ham-con2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.18)
+}
+.ham-menu .ham-bg h4 {
+  font-size: 20px;
+  line-height: 2;
+}
+.ham-menu .ham-bg p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.ham-menu .ham-bg .sns {
+  float: left;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+.ham-menu .ham-bg .sns a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  height: 25px;
+}
+.ham-menu .ham-bg .sns a img {
+  height: 100%
+}
+
+/*햄버거메뉴 jQuery*/
+.ham-btn-on {
+  display: block;
+}
+.ham-btn-off {
+  display: none;
+}
+.ham-btn.kong .ham-btn-on {
+  display: none
+}
+.ham-btn.kong .ham-btn-off {
+  display: block
+}
+.ham-menu {
+  display: none
+}
+.ham-menu.kong {
+  display: block
+}
+
+/*오른쪽 동그란메뉴*/
+.h-fix .r-menu {
+  position: fixed;
+  top: 300px;
+  right: 80px;
+}
+.r-menu > div{
+  top: 50px;
+  right: 80px;
+  
+  width: 60px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.r-menu > div a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ec2024;
+  margin-bottom: 5px;
+  box-shadow: 0 0 3px #432929
+}
+.r-menu > div a:hover {
+  background: #fff;
+}
+.r-menu > div a:hover i {
+  color: #ec2024
+}
+.r-menu > div a i {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding-top: 18px;
+  padding-left: 17px
+}
+.r-menu > div p {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+.r-menu .customur{}
+/*탑버튼*/
+.top-btn {
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+  width: 60px;
+  height: 80px;
+}
+.top-btn a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ec2024;
+  margin-bottom: 5px;
+  box-shadow: 0 0 3px #432929
+}
+.top-btn a:hover {
+  background: #fff;
+}
+.top-btn a:hover i {
+  color: #ec2024
+}
+.top-btn a i {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding-top: 18px;
+  padding-left: 22px
+}
+.top-btn p {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*main*/
+.wrap {
+  height: 100%;
+  background: #fff; 
+/*  border-top: 4px solid #ec2024;*/
+}
+
+/*visual*/
+#visual {
+  height: 100%;
+  background: #0B0D0C url(../img/visual_bg.png) no-repeat center center;
+/*  border-top: 4px solid #ec2024;*/
+}
+
+/*visual 아래 롤링 버튼메뉴*/
+#visual .v-snb {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 50px;
+  
+  width: 170px;
+  height: 47px
+}
+.v-snb .prev {
+  float: left;
+  margin-right: 20px;
+}
+.v-snb .prev a {
+  color: #fff;
+  font-size: 16.5px;
+  line-height: 47px;
+  text-align: center;
+}
+.v-snb .paging {
+  position: relative;
+  float: left;
+  width: 47px;
+  height: 47px;
+  border-radius: 25px;
+  background: #ec2024;
+}
+.v-snb .paging a {
+  position: absolute;
+  display: block;
+  right: 13.5px;
+  top: 13.5px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.v-snb .paging a.on {
+  display: block;
+}
+.v-snb .paging a {
+  display: none;
+}
+/*
+.v-snb .paging .p-02 {
+  display: block;
+}
+.v-snb .paging .p-03 {
+  display: block;
+}
+*/
+.v-snb .next {
+  float: left;
+  margin-left: 20px;
+}
+.v-snb .next a {
+  color: #fff;
+  font-size: 16.5px;
+  line-height: 47px;
+  text-align: center;
+}
+
+/*menu*/
+#menu {
+  background: #ccc;
+}
+#menu .title {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 270px;
+  margin: auto;
+  
+  width: 434px
+}
+#menu .title img {
+  display: block;
+  float: left;
+  width: 245px;
+  height: 100%;
+}
+#menu .title h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ec2024;
+  padding-top: 80px;
+  padding-left: 262px;
+}
+
+/*brand*/
+#brand {
+  background: #ffc74a;
+}
+#brand .bg-p {
+  position: relative;
+  background: url(../img/section02_bg.png);
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+}
+
+.b-con .b-con-l {
+  position: absolute;
+  top: 248px;
+  padding-left: 15%;
+}
+.b-con .b-con-l img {
+  display: block;
+  width: 100%;
+}
+
+.b-con .b-con-r {
+  position: absolute;
+  top: 280px;
+  padding-left: 60%
+}
+.b-con .b-con-r h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 15px
+}
+.b-con .b-con-r img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px
+}
+.b-con .b-con-r .serif {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 30px
+}
+
+.b-con .b-con-r .more-btn {
+  float: left;
+  background: #000;
+  width: 44px;
+  height: 44px;
+  border-radius: 30px;
+  border: 2px solid #fff
+}
+.b-con-r .more-btn a {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+.b-con-r .more-btn a i {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 12px;
+  padding-left: 12px
+}
+
+.b-con .b-con-r .btn-txt {
+  left: 0;
+  font-size: 16.5px;
+  font-weight: bold;
+  padding-top: 13.75px;
+  padding-left: 54px
+}
+
+/*community*/
+#community {
+  background: #999
+}
+#community .bg-c {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*family*/
+#family {
+  background: #0B0D0C;
+}
+#family .bg-f {
+  position: relative;
+  background: url(../img/section04_bg.png) no-repeat center/cover;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+#family .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 270px;
+  margin: auto;
+  
+  width: 434px
+}
+.title img {
+  display: block;
+  float: left;
+  width: 245px;
+  height: 100%;
+}
+.title h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ec2024;
+  padding-top: 60px;
+  padding-left: 262px;
+}
+
+
+
+/*footer*/
+#family footer {
+  height: 343px;
+  width: 100%;
+  background: #ec2024
+}
+#family footer .com {
+  height: 293px;
+  background: url(../img/footer_pt.png) no-repeat;
+}
+.com .f-logo {
+  width: 185px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px
+}
+.com .f-logo img{
+  width: 100%;
+  display: block;
+}
+#family footer .com p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+#family footer .add {
+  height: 50px;
+  width: 100%;
+  background: #0B0D0C
+}
+#family footer .add address {
+  font-style: normal;
+  font-weight: normal;
+  color: #ec2024;
+  text-align: center;
+  padding-top: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

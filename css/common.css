@@ -1,0 +1,347 @@
+@charset "utf-8";
+@import url(font.css);
+@import url(all.min.css);
+@import url(normalize.css);
+
+a {
+  text-decoration: none;
+}
+body {
+  width: 100%;
+}
+./*inner {
+  width: 1200px;
+  margin: auto;
+}*/
+
+/*header*/
+header {
+  width: 100%;
+  height: 660px;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  background-color: #ffd940;
+  background-image: url(../img/main_bg1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+/*  background-size: 1200px 660px;*/
+  background-size: contain;
+  overflow: hidden;
+}
+header .inner {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+/*  background-color: #ffd940;*/
+  z-index: 2
+}
+header .inner.on {
+  background-color: #ffd940;
+  transition: all 0.2s
+}
+.inner h1 {
+  position: absolute;
+  left: 11%;
+}
+.inner h1 a {
+  display: block;
+  margin-top: 10px;
+  transition: 0.3s ease
+}
+.inner h1 a:hover {
+  transform: translateY(5px)
+}
+.inner .gnb {
+  position: absolute;
+  right: 11%
+}
+.inner .gnb a {
+  display: block;
+  float: left;
+  margin-left: 40px;
+  margin-top: 22px;
+  font-weight: bold;
+  transition: 0.3s ease
+}
+.inner .gnb a:hover {
+  transform: translateY(5px)
+}
+
+/*visual*/
+.visual {
+  
+}
+.visual h2 {
+  font-family: NanumSquareEB;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 400px;
+}
+.visual h4 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 35px;
+}
+.visual img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -410px;
+  width: 820px;
+}
+
+#about,
+#web,
+#edit {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px
+}
+#web,
+#edit {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%
+}
+/*#web {
+  background: #e5e8e8
+}*/
+#about h2,
+#web h2,
+#edit h2 {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+/*  background: #c9cece;*/
+/*  border-top: solid 1px #000;*/
+/*  border-bottom: solid 1px #c9cece*/
+}
+
+
+/*web*/
+#web ul,
+#edit ul {
+	margin: auto;
+}
+#web ul .work,
+#edit ul .work {
+  cursor: pointer;
+  width: 31.3333%;
+  height: 250px;
+  margin: 1% 1%;
+/*  background: #c9cece;*/
+  border-radius: 20px;
+  border: 1px solid #c9cece;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  transition: 0.5s ease
+}
+#web ul .work:hover,
+#edit ul .work:hover {
+  background: #ffd940;
+  border-radius: 20px;  
+  border: 1px solid #ffd940
+}
+.work img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.work .sungsim {
+	height: 70px;
+  margin-left: -85.5px;
+  margin-top: -35px;
+}
+.work .biff {
+  height: 50px;
+  margin-left: -92px;
+  margin-top: -25px;
+}
+.work .clova {
+  height: 35px;
+  margin-left: -61.85px;
+  margin-top: -17.5px;
+}
+.work .jejudora {
+  height: 50px;
+  margin-left: -81.42px;
+  margin-top: -25px;
+}
+.work .bodyluv {
+  height: 25px;
+  margin-left: -91.66px;
+  margin-top: -12.5px;
+}
+.work .ediya {
+  height: 30px;
+  margin-left: -69.66px;
+  margin-top: -15px;
+}
+
+/*edit img*/
+.work p {
+  font-size: 25px;
+  color: #151515;
+  font-weight: bold;
+  line-height: 250px;
+  text-align: center;
+}
+.work .jinjuye {
+	height: 44px;
+  margin-left: -75.42px;
+  margin-top: -22px;
+}
+.work .healthy {
+	height: 40px;
+  margin-left: -80px;
+  margin-top: -20px;
+}
+.work .hanyejong {
+	height: 26px;
+  margin-left: -66.94px;
+  margin-top: -13px;
+}
+.work .myeongseung {
+	height: 60px;
+  margin-left: -53.33px;
+  margin-top: -30px;
+}
+
+/*web modal*/
+main .w-modal,
+main .e-modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgb(0,0,0, 0.8)
+}
+
+.w-modal .modal-contents,
+.e-modal .modal-contents {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 1000px;
+  margin: 100px auto;
+  opacity: 0.95px;
+}
+.modal-contents .img {
+  width: 100%;
+}
+.modal-contents .close {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  background: #fff
+}
+.modal-contents .close:hover {
+  cursor: pointer
+}
+.modal-contents a {
+  position: fixed;
+  top: 62px;
+  right: 110px;
+  font-size: 18px;
+  color: #fff
+}
+
+/*footer*/
+footer {
+/*  position: fixed;*/
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #000
+}
+.footer-info {
+/*  position: absolute;*/
+  padding-top: 30px;
+/*  width: 1200px*/
+}
+.footer-info a {
+  color: #fff;
+  display: block;
+  width: 150px;
+  margin: auto;
+}
+.link {
+  padding-top: 20px;
+  height: 60px;
+  width: 120px;
+  margin: auto
+}
+.link a {
+  height: 60px;
+  display: block;
+  float: left;
+}
+.link img {
+  height: 60px;
+}
+.link copy {
+  height: 30px;
+}
+.copy {
+  font-size: 13px;
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/*스크롤바 디자인하기
+width, track, handle, hover
+*/
+::-webkit-scrollbar {
+  width: 15px
+}
+
+::-webkit-scrollbar-track {
+  color: #c9cece;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd940
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

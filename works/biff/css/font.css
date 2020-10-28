@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@font-face { 
+  font-family: InfinitySans; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+h2 {
+/*  font-size: 65px;*/
+  font-size: 4em
+}
+h3 {
+/*  font-size: 52px;*/
+  font-size: 3em
+}
+h4 {
+/*  font-size: 30px;*/
+  font-size: 1.5em
+}
+
+body { 
+  font-family: 'InfinitySans'; 
+  letter-spacing: 1px;
+}
