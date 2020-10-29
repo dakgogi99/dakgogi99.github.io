@@ -160,7 +160,7 @@ body {
 }
 .qna-fix .chaton:hover {
   background: #000 url(../img/ico_foot_qna.png)no-repeat center;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .qna-fix .chaton.on {
   display: none;
@@ -173,6 +173,7 @@ body {
 }
 .qna-fix .chat-list.on {
   display: block;
+  transition: 0.3s ease;
 }
 .qna-fix .chat-list .naver.on {
   position: absolute;
@@ -191,6 +192,7 @@ body {
   border-radius: 50px;
   overflow: hidden;
   background: #cdcdcd url(../img/ico_naver.png)no-repeat center;
+  transition: 0.3s ease;
 }
 .qna-fix .chat-list .naver a:hover {
   background: #40b64a url(../img/ico_naver.png)no-repeat center;
@@ -212,6 +214,7 @@ body {
   border-radius: 50px;
   overflow: hidden;
   background: #cdcdcd url(../img/ico_kakaooff.png)no-repeat center;
+  transition: 0.3s ease;
 }
 .qna-fix .chat-list .kakao a:hover {
   background: #fdf03e url(../img/ico_kakao.png)no-repeat center;
@@ -234,6 +237,7 @@ body {
   border-radius: 50px;
   overflow: hidden;
   background: #cdcdcd url(../img/ico_web.png)no-repeat center;
+  transition: 0.3s ease;
 }
 .qna-fix .chat-list .web a:hover {
  background: #3fa9f5 url(../img/ico_web.png)no-repeat center;
