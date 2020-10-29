@@ -869,6 +869,7 @@ footer address {
   .biffsalon .b-txt h2 {
     font-size: 40px;
     margin-bottom: 15px;
+    margin-left: 30px;
   }
   
   .visual .v-txt h3,
@@ -877,6 +878,7 @@ footer address {
   .archive .a-txt h3,
   .biffsalon .b-txt h3 {
     font-size: 30px;
+    margin-left: 30px;
   }
   
   .visual .v-txt h4,
@@ -885,7 +887,13 @@ footer address {
   .archive .a-txt h4,
   .biffsalon .b-txt h4 {
     font-size: 25px;
+    margin-left: 30px;
   }
+  .filmmarket .f-txt p,
+  .archive .a-txt p {
+    margin-left: 30px;
+  }
+  
   .visual .v-txt img,
   .program .p-txt img,
   .filmmarket .f-txt img,
@@ -894,6 +902,16 @@ footer address {
     margin: 0;
     margin-top: 30px;
   }
+  .visual .v-txt a,
+  .program .p-txt a,
+  .filmmarket .f-txt a,
+  .archive .a-txt a,
+  .biffsalon .b-txt a {
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
   header .gnb {
     display: none;
     top: 82px;
@@ -1057,7 +1075,7 @@ footer address {
   .filmmarket .snb a:nth-child(4) {
     width: 25%;
     height: 60px;
-    font-size: 15px;
+    font-size: 14px;
   }
   
   .archive {
@@ -1132,18 +1150,17 @@ footer address {
     linear-gradient(#4d44dd, #f51bc9);
   }
   .foot-con .spon {
-  width: 90%;
-  height: 100px;
+    width: 90%;
+    height: 100px;
+    margin: auto;
   }
   
   .foot-con .spon a {
     width: 20%;
-    height: 20%;
-    margin: 33.3333px 8.75px;
+    margin: 35px 5px;
   }
   .foot-con .spon img {
     width: 100%;
-    height: 100%
   }
   
   footer form {
@@ -1162,7 +1179,7 @@ footer address {
   footer .f-snb {
     padding: 20px 0;
     border-bottom: solid 1px #fff;
-    font-size: 15px;
+    font-size: 13px;
   }
   footer .f-snb a:not(last-child) {
   margin-right: 5px;
@@ -1176,6 +1193,9 @@ footer address {
     margin-bottom: 10px;
     
     font-size: 15px;
+  }
+  address {
+    font-size: 8px
   }
 }
 
