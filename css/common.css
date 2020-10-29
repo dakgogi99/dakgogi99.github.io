@@ -40,21 +40,52 @@ header .inner {
   z-index: 2
 }
 header .inner.on {
-  background-color: #ffd940;
+  background-color: #fad12b;
   transition: all 0.2s
 }
+/*
+header .inner.on a {
+  color: #fff
+}
+*/
 .inner h1 {
   position: absolute;
   left: 11%;
+  transition: 0.3s ease;
 }
 .inner h1 a {
   display: block;
   margin-top: 10px;
-  transition: 0.3s ease
+  width: 40px;
 }
-.inner h1 a:hover {
+.inner h1 img {
+  width: 100%;
+}
+.inner h1 img {
+  animation: sign 3s linear infinite;
+}
+@keyframes sign {
+  0% {
+    transform: rotate(-20deg)
+  }
+  50% {
+    transform: rotate(50deg)
+  }
+  100% {
+    transform: rotate(-20deg)
+  }
+}
+.inner h1:hover {
   transform: translateY(5px)
 }
+.inner h1 a p {
+  position: absolute;
+  top: 22px;
+  left: 50px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
 .inner .gnb {
   position: absolute;
   right: 11%
@@ -77,9 +108,29 @@ header .inner.on {
 }
 .visual h2 {
   font-family: NanumSquareEB;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   padding-top: 400px;
+}
+.visual h2 {
+  animation: hi 2s ease infinite;
+}
+@keyframes hi {
+  0% {
+    transform: translateY(-5px)
+  }
+  30% {
+    transform: translateY(0px)
+  }
+  50% {
+    transform: translateY(-10px)
+  }
+  70% {
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(-5px)
+  }
 }
 .visual h4 {
   font-weight: bold;
@@ -95,12 +146,12 @@ header .inner.on {
   width: 820px;
 }
 
-#about,
+#career,
 #web,
 #edit {
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 50px
 }
 #web,
@@ -109,23 +160,96 @@ header .inner.on {
   height: 100%;
   margin-left: 10%
 }
-/*#web {
-  background: #e5e8e8
-}*/
-#about h2,
 #web h2,
 #edit h2 {
-  padding-top: 100px;
-  padding-bottom: 40px;
+  margin-left: 42%;
+  margin-right: 42%;
+  margin-bottom: 20px;
   font-size: 20px;
   font-weight: bolder;
   text-align: center;
-/*  background: #c9cece;*/
-/*  border-top: solid 1px #000;*/
-/*  border-bottom: solid 1px #c9cece*/
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  background: #ffd940;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
 }
 
-
+/*career&skill*/
+#career {
+  margin: 0;
+}
+#career article {
+  width: 50%;
+  height: 550px;
+  padding: 50px 0px 0px 100px;
+/*  border-top: 1px solid #000;*/
+  box-sizing: border-box;
+}
+#career article:nth-child(1) {
+  padding: 50px 100px 0px 0px;
+}
+#career article:nth-child(2) {
+  padding: 50px 0px 0px 100px;
+}
+#career .left h2,
+#career .right h2 {
+  font-family: NanumSquareEB;
+  font-size: 50px;
+  color: #000;
+}
+#career .left h2 {
+  text-align: right;
+}
+#career .left {
+  float: left;
+  background: #edc72b;
+} 
+.left .title h4,
+.left .title ul,
+.left .title p {
+  text-align: right
+}
+.left .title ul,
+.left .title p {
+  margin-top: 5px
+}
+.left .title {
+  margin: 20px 0;
+}
+#career .right {
+  float: right;
+  background: #fad12b;
+} 
+.right .title {
+  margin: 20px 0;
+}
+.title h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.title ul {
+  margin-top: 5px
+}
+.title ul li {
+  line-height: 23px;
+}
+.right .title ul li:before {
+  content: "○";
+  font-size: 10px;
+  padding-right: 5px;
+  color: #fff;
+  font-weight: bold
+}
+.left .title ul li:after {
+  content: "○";
+  font-size: 10px;
+  padding-left: 5px;
+  color: #fff;
+  font-weight: bold
+}
 /*web*/
 #web ul,
 #edit ul {
@@ -245,28 +369,43 @@ main .e-modal {
 }
 .modal-contents .close {
   position: fixed;
-  top: 50px;
+  top: 34px;
   right: 50px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 30px;
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
   font-size: 30px;
   font-weight: bold;
   color: #000;
-  background: #fff
+  background: #ffd940
 }
 .modal-contents .close:hover {
   cursor: pointer
 }
 .modal-contents a {
   position: fixed;
-  top: 62px;
-  right: 110px;
-  font-size: 18px;
-  color: #fff
+  top: 32px;
+  right: 100px;
+  display: block;;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  background: #ffd940;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
 }
+/*.modal-contents a:before:hover {
+  position: absolute;
+  background: #ffd940;
+  padding: 10px 20px;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 500px;
+}*/
 
 /*footer*/
 footer {
@@ -278,7 +417,7 @@ footer {
 }
 .footer-info {
 /*  position: absolute;*/
-  padding-top: 30px;
+  padding-top: 20px;
 /*  width: 1200px*/
 }
 .footer-info a {
@@ -288,7 +427,7 @@ footer {
   margin: auto;
 }
 .link {
-  padding-top: 20px;
+  padding-top: 10px;
   height: 60px;
   width: 120px;
   margin: auto

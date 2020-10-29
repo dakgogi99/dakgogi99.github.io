@@ -3,7 +3,7 @@
 header {
   position: relative;
   width: 100%;
-  height: 660px;
+  height: 600px;
   background-color: #ffd940;
   background-image: url(../img/main_bg_m.png);
   background-repeat: no-repeat;
@@ -39,6 +39,23 @@ header {
   height: 200px;
   margin-bottom: 20px;
   float: none
+}
+/*carrer*/
+#career article {
+  width: 100%;
+}
+#career article:nth-child(1) {
+  padding: 50px 50px 0px 0px;
+}
+#career article:nth-child(2) {
+  padding: 50px 0px 0px 50px;
+}
+#career .left,
+#career .right {
+  float: none;
+}
+#career .left {
+  height: 400px
 }
 /*edit img*/
 .work p {
