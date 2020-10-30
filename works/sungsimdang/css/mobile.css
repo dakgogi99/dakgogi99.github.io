@@ -90,7 +90,7 @@ header .logo-m {
 /*visual*/
 #visual {
   position: relative;
-  height: 600px;
+  height: 100%;
   background: #0B0D0C url(../img/visual_bg_m.png) no-repeat center center;
   background-size: 100% ;
   border-top: 4px solid #ec2024;
