@@ -601,6 +601,9 @@ header .h-fix .logo-m {
   
   width: 434px
 }
+#family .title-m {
+  display: none
+}
 .title img {
   display: block;
   float: left;
