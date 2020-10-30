@@ -8,8 +8,8 @@ header .logo-m {
   position: absolute;
   left: 30px;
   top: 25px;
-  width: 205px;
-  height: 83px;
+  width: 146px;
+  height: 60px;
   z-index: 4;
 }
 .logo-m a {
@@ -17,7 +17,7 @@ header .logo-m {
   width: 100%;
   height: 100%;
   background-image: url(../img/logo_white.png);
-  background-size: 205px 83px;
+  background-size: 146px 60px;
   z-index: 2
 }
 /*gnb 메인메뉴*/
@@ -34,7 +34,7 @@ header .logo-m {
 .h-fix .ham-btn {
   position: fixed;
   top: 25px;
-  right: 30px;
+  right: 10px;
 }
 
 /*햄버거 메뉴 on 할때 전체 메뉴*/
@@ -50,29 +50,36 @@ header .logo-m {
 }
 .ham-con article:nth-child(1) {
   height: 370px;
-  padding: 120px 0 0 40px;
+  padding: 120px 0 0 20px;
 }
 .ham-con article:nth-child(2) {
   height: 370px;
-  padding: 120px 0 0 40px;
+  padding: 120px 0 0 20px;
 }
 .ham-con article:nth-child(3) {
   height: 330px;
   top: 370px;
-  padding: 50px 0 0 40px;
+  padding: 50px 0 0 20px;
   box-sizing: border-box;
 }
 .ham-con article:nth-child(4) {
   height: 330px;
   top: 370px;
-  padding: 50px 0 0 40px;
+  padding: 50px 0 0 20px;
   box-sizing: border-box;
 }
 .ham-con article h4 {
-  font-size: 25px
+  font-size: 20px
 }
 .ham-menu .ham-bg {
   display: none
+}
+.ham-con article a {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  color: #fff;
+  line-height: 1.8;
 }
 
 /*오른쪽 동그란메뉴*/
@@ -84,13 +91,13 @@ header .logo-m {
 .top-btn {
   position: fixed;
   bottom: 25px;
-  right: 30px;
+  right: 10px;
 }
 
 /*visual*/
 #visual {
   position: relative;
-  height: 100%;
+  height: 700px;
   background: #0B0D0C url(../img/visual_bg_m.png) no-repeat center center;
   background-size: 100% ;
   border-top: 4px solid #ec2024;
@@ -163,7 +170,7 @@ header .logo-m {
   background: url(../img/section02_bg.png);
   opacity: 0.1;
   width: 100%;
-  height: 100%;
+  height: 700px;
 }
 .b-con .b-con-l {
   display: none;
