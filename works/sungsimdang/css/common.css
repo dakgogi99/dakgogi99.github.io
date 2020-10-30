@@ -571,10 +571,14 @@ header .h-fix .logo-m {
 }
 
 /*community*/
-#community {
+#community .mobile {
+  display: none
+}
+#community .web {
+  display: block;
   background: #999
 }
-#community .bg-c {
+#community .web .bg-c {
   position: relative;
   width: 100%;
   height: 100%;
@@ -596,7 +600,7 @@ header .h-fix .logo-m {
   position: absolute;
   left: 0;
   right: 0;
-  top: 270px;
+  top: 200px;
   margin: auto;
   
   width: 434px
@@ -617,8 +621,98 @@ header .h-fix .logo-m {
   padding-top: 60px;
   padding-left: 262px;
 }
-
-
+#family .brand {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  margin-left: -587.5px;
+  width: 1175px;
+}
+#family .brand .br-con {
+  float: left;
+}
+#family .brand .br-con {
+  position: relative;
+}
+#family .brand .br-1 {
+  margin-right: 100px;
+  margin-bottom: 50px
+}
+#family .brand .br-2 {
+  margin-right: 100px;
+  margin-bottom: 50px
+}
+#family .brand .br-2 {
+  margin-bottom: 50px
+}
+#family .brand .br-4 {
+  margin-right: 100px
+}
+#family .brand .br-5 {
+  margin-right: 100px
+}
+.brand .br-con a {
+  display: block;
+}
+.brand .br-con .b-bg {
+  width: 325px;
+  height: 180px
+}
+.brand .br-con .b-logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;  
+}
+.brand .br-con p {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+}
+.brand .br-1 .b-logo {
+  margin-left: -83px;
+}
+.brand .br-1 p {
+  margin-left: -110px;
+}
+.brand .br-2 .b-logo {
+  margin-left: -71.5px;
+}
+.brand .br-2 p {
+  margin-left: -102px;
+}
+.brand .br-3 .b-logo {
+  top: 40px;
+  margin-left: -75px;
+}
+.brand .br-3 p {
+  margin-left: -93px;
+}
+.brand .br-4 .b-logo {
+/*  top: 40px;*/
+  margin-left: -54.5px;
+}
+.brand .br-4 p {
+  margin-left: -113px;
+}
+.brand .br-5 .b-logo {
+/*  top: 40px;*/
+  margin-left: -77.5px;
+}
+.brand .br-5 p {
+  margin-left: -111px;
+}
+.brand .br-6 .b-logo {
+  top: 30px;
+  margin-left: -83.5px;
+}
+.brand .br-6 p {
+  bottom: 35px;
+  margin-left: -80px;
+}
 
 /*footer*/
 #family footer {
