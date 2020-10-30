@@ -145,32 +145,32 @@ header .logo-m {
   position: relative;
   left: 0;
   right: 0;
-  top: 55px;
+  top: 95px;
   margin: auto;
   
-  width: 260px
+  width: 198px
 }
 #menu .title img {
   display: block;
-  float: left;
-  width: 180px;
+  float: none;
+  width: 198px;
   height: 100%;
 }
 #menu .title h2 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   color: #ec2024;
-  padding-top: 60px;
-  padding-left: 190px;
+  padding-top: 0px;
+  padding-left: 60px;
 }
 
 /*brand*/
 #brand .bg-p {
   position: relative;
-  background: url(../img/section02_bg.png);
-  opacity: 0.1;
+  background: url(../img/section02_img_m.png);
+  opacity: 1;
   width: 100%;
-  height: 700px;
+/*  height: 700px;*/
 }
 .b-con .b-con-l {
   display: none;
@@ -178,54 +178,64 @@ header .logo-m {
 .b-con .b-con-m {
   display: block;
   position: absolute;
-  top: 40px;
+  top: 0px;
   padding-left: 0;
 }
 .b-con .b-con-m img {
   display: block;
-  width: 90%;
+  width: 100%;
 }
 .b-con .b-con-r {
   position: absolute;
-  top: 350px;
+  top: 418px;
   padding-left: 80px
 }
 .b-con .b-con-r h2 {
-  font-size: 24px;
+  font-size: 27px;
 }
 .b-con .b-con-r img {
-  width: 230px;
+  width: 300px;
   height: auto;
   margin-bottom: 20px
 }
 .b-con .b-con-r .serif {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.3;
   margin-bottom: 20px
 }
 
 /*family*/
+#family .bg-f {
+  position: relative;
+  background: url(../img/section04_bg_m.png);
+  opacity: 1;
+  width: 100%;
+/*  height: 100%;*/
+}
 #family .title {
+  display: none
+}
+#family .title-m {
   position: absolute;
   left: 0;
   right: 0;
-  top: 95px;
+  top: 157px;
   margin: auto;
   
-  width: 270px
+  width: 180px
 }
-.title img {
+.title-m img {
   display: block;
   float: left;
-  width: 150px;
+  width: 169px;
   height: 100%;
 }
-.title h2 {
-  font-size: 16px;
+.title-m h2 {
+  font-size: 25px;
   font-weight: bold;
   color: #ec2024;
-  padding-top: 38px;
-  padding-left: 160px;
+  padding-top: 60px;
+  padding-left: 3px;
 }
 /*footer*/
 #family footer {

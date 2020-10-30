@@ -592,6 +592,7 @@ header .h-fix .logo-m {
   height: 100%;
 }
 #family .title {
+  display: block;
   position: absolute;
   left: 0;
   right: 0;
