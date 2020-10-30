@@ -1,0 +1,19 @@
+@charset "utf-8";
+#career article:nth-child(1) {
+  padding: 50px 40px 0px 30px;
+}
+#career article:nth-child(2) {
+  padding: 50px 0px 0px 40px;
+}
+.webmodal,
+.editmodal {
+  width: 80%;
+}
+.w-modal .modal-contents,
+.e-modal .modal-contents {
+  width: 90%;
+}
+
+.modal-contents img {
+  width: 100%;
+}
