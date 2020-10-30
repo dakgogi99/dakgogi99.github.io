@@ -187,10 +187,10 @@ header .inner.on a {
   box-sizing: border-box;
 }
 #career article:nth-child(1) {
-  padding: 50px 100px 0px 30px;
+  padding: 50px 80px 0px 30px;
 }
 #career article:nth-child(2) {
-  padding: 50px 0px 0px 100px;
+  padding: 50px 0px 0px 80px;
 }
 #career .left h2,
 #career .right h2 {
