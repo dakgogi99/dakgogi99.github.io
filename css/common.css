@@ -165,8 +165,6 @@ header .inner.on a {
   margin-left: 42%;
   margin-right: 42%;
   margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: bolder;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -215,6 +213,10 @@ header .inner.on a {
 .left .title ul,
 .left .title p {
   margin-top: 5px
+}
+.left .title p {
+  margin-top: 10px;
+  line-height: 23px;
 }
 .left .title {
   margin: 20px 0;

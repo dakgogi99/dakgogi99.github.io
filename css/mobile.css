@@ -45,17 +45,17 @@ header {
   width: 100%;
 }
 #career article:nth-child(1) {
-  padding: 50px 50px 0px 0px;
+  padding: 50px 30px 0px 0px;
 }
 #career article:nth-child(2) {
-  padding: 50px 0px 0px 50px;
+  padding: 50px 0px 0px 80px;
 }
 #career .left,
 #career .right {
   float: none;
 }
 #career .left {
-  height: 400px
+  height: 500px
 }
 /*edit img*/
 .work p {
