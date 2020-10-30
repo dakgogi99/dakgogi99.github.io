@@ -167,7 +167,7 @@ header .logo-m {
 /*brand*/
 #brand {
   background: #ffc74a;
-  height: 900px;
+  height: 100%;
 }
 #brand .bg-p {
   position: relative;
@@ -176,7 +176,7 @@ header .logo-m {
   opacity: 1;
 /*  width: 100%;*/
   height: 900px;
-  overflow-y: hidden
+/*  overflow-y: hidden*/
 }
 .b-con .b-con-l {
   display: none;
@@ -204,7 +204,7 @@ header .logo-m {
 /*family*/
 #family {
   background: #0B0D0C;
-  height: 1779px;
+  height: 100%;
 }
 #family .bg-f {
   position: relative;
