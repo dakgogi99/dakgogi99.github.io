@@ -978,7 +978,7 @@ footer .foot-down {
   }
   .section-03 .sec-up h4,
   .section-03 .sec-down h4 {
-    font-size: 28px;
+    font-size: 24px;
   }
   main .section-04 {
     height: 800px;
@@ -1096,6 +1096,10 @@ footer .foot-down {
     text-align: center;
     color: #1d2129;
   }
+  .section-06 {
+    width: 100%;
+    padding: 0;
+  }
   .section-06 .sec06-txt h3 {
     font-size: 25px;
     line-height: 2;
@@ -1132,11 +1136,45 @@ footer .foot-down {
   .sec06-img {
     height: 350px;
     width: 100%;
-    transform: translateY(120px)
+    padding: 0;
+    transform: translateY(130px)
   }
+  .sec06-img {
+    animation: move 7s ease infinite;
+  }
+  @keyframes move {
+    0% {
+      transform: translateY(130px)
+    }
+
+    20% {
+      transform: translateY(20px)
+    }
+
+    40% {
+      transform: translateY(20px)
+    }
+
+    60% {
+      transform: translateY(70px)
+    }
+
+    80% {
+      transform: translateY(70px)
+    }
+    90% {
+      transform: translateY(130px)
+    }
+    100% {
+      transform: translateY(130px)
+    }
+    
+  }
+/*
   .sec06-img:hover {
     transform: translateY(40px)
   }
+*/
   footer {
     height: 280px;
   }
@@ -1174,7 +1212,7 @@ footer .foot-down {
     margin: auto;
     width: 100%;
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: normal;
     text-align: center;
     bottom: 100px;
