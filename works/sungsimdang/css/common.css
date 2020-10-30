@@ -31,7 +31,7 @@ header .h-fix {
   z-index: 4
 }
 header .h-fix .logo {
-  position: fixed;
+  position: relative;
   left: 80px;
   top: 50px;
   width: 402px;
@@ -106,7 +106,6 @@ header .h-fix .logo {
   height: 60px;
   border-radius: 30px;
   background: #ec2024;
-  box-shadow: 0 0 3px #432929;
   z-index: 5  
 }
 .h-fix .ham-btn a {
@@ -155,6 +154,7 @@ header .h-fix .logo {
   position: fixed;
   height: 100%;
   width: 50%;
+  top: 0;
   right: 0;
   z-index: 4
 }
@@ -329,7 +329,6 @@ header .h-fix .logo {
   border-radius: 30px;
   background: #ec2024;
   margin-bottom: 5px;
-  box-shadow: 0 0 3px #432929
 }
 .r-menu > div a:hover {
   background: #fff;
@@ -351,6 +350,7 @@ header .h-fix .logo {
   text-align: center;
 }
 .r-menu .customur{}
+
 /*탑버튼*/
 .top-btn {
   position: fixed;
@@ -366,7 +366,6 @@ header .h-fix .logo {
   border-radius: 30px;
   background: #ec2024;
   margin-bottom: 5px;
-  box-shadow: 0 0 3px #432929
 }
 .top-btn a:hover {
   background: #fff;
@@ -508,6 +507,9 @@ header .h-fix .logo {
   position: absolute;
   top: 248px;
   padding-left: 15%;
+}
+.b-con .b-con-m {
+  display: none;
 }
 .b-con .b-con-l img {
   display: block;

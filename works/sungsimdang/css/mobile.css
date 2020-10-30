@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/*고정메뉴*/
+header .h-fix .logo {
+  position: relative;
+  left: 30px;
+  top: 25px;
+  width: 205px;
+  height: 83px;
+}
+.h-fix .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/logo_white.png);
+  background-size: 205px 83px;
+  z-index: 2
+}
+/*gnb 메인메뉴*/
+.h-fix .gnb {
+  display: none
+}
+
+/*왼쪽 네비게이션 메뉴*/
+.h-fix .side {
+  display: none
+}
+
+/*햄버거 메뉴*/
+.h-fix .ham-btn {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+}
+
+/*햄버거 메뉴 on 할때 전체 메뉴*/
+.ham-menu .ham-con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+}
+.ham-con article {
+  padding: 0;
+}
+.ham-con article:nth-child(1) {
+  height: 370px;
+  padding: 120px 0 0 40px;
+}
+.ham-con article:nth-child(2) {
+  height: 370px;
+  padding: 120px 0 0 40px;
+}
+.ham-con article:nth-child(3) {
+  height: 330px;
+  top: 370px;
+  padding: 50px 0 0 40px;
+  box-sizing: border-box;
+}
+.ham-con article:nth-child(4) {
+  height: 330px;
+  top: 370px;
+  padding: 50px 0 0 40px;
+  box-sizing: border-box;
+}
+.ham-con article h4 {
+  font-size: 25px
+}
+.ham-menu .ham-bg {
+  display: none
+}
+
+/*오른쪽 동그란메뉴*/
+.h-fix .r-menu {
+  display: none
+}
+
+/*탑버튼*/
+.top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+}
+
+/*visual*/
+#visual {
+  height: 600px;
+  background: #0B0D0C url(../img/visual_bg_m.png) no-repeat center center;
+  border-top: 4px solid #ec2024;
+  box-sizing: border-box
+}
+
+/*visual 아래 롤링 버튼메뉴*/
+#visual .v-snb {
+  display: none
+}
+
+/*menu*/
+#menu {
+  background: #fff;
+}
+#menu .title {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 55px;
+  margin: auto;
+  
+  width: 316px
+}
+#menu .title img {
+  display: block;
+  float: left;
+  width: 206px;
+  height: 100%;
+}
+#menu .title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ec2024;
+  padding-top: 67px;
+  padding-left: 215px;
+}
+
+/*brand*/
+#brand .bg-p {
+  position: relative;
+  background: url(../img/section02_bg.png);
+  opacity: 0.1;
+  width: 100%;
+  height: 900px;
+}
+.b-con .b-con-l {
+  display: none;
+}
+.b-con .b-con-m {
+  display: block;
+  position: absolute;
+  top: 60px;
+  padding-left: 0;
+}
+.b-con .b-con-m img {
+  display: block;
+  width: 100%;
+}
+.b-con .b-con-r {
+  position: absolute;
+  top: 485px;
+  padding-left: 130px
+}
+.b-con .b-con-r h2 {
+  font-size: 27px;
+}
+.b-con .b-con-r img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px
+}
+.b-con .b-con-r .serif {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 30px
+}
+
+/*family*/
+#family .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 95px;
+  margin: auto;
+  
+  width: 318px
+}
+.title img {
+  display: block;
+  float: left;
+  width: 180px;
+  height: 100%;
+}
+.title h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ec2024;
+  padding-top: 47px;
+  padding-left: 190px;
+}
+/*footer*/
+#family footer .com p {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  box-sizing: border-box
+}
+#family footer .add address {
+  font-size: 14px
+}
+
+
+
