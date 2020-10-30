@@ -45,7 +45,7 @@ header {
   width: 100%;
 }
 #career article:nth-child(1) {
-  padding: 50px 30px 0px 0px;
+  padding: 50px 30px 0px 80px;
 }
 #career article:nth-child(2) {
   padding: 50px 0px 0px 80px;
@@ -55,7 +55,7 @@ header {
   float: none;
 }
 #career .left {
-  height: 500px
+  height: 580px
 }
 /*edit img*/
 .work p {
