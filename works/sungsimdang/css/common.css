@@ -31,6 +31,7 @@ header .h-fix {
   z-index: 4
 }
 header .h-fix .logo {
+  display: block;
   position: relative;
   left: 80px;
   top: 50px;
@@ -43,6 +44,9 @@ header .h-fix .logo {
   height: 100%;
   background: url(../img/logo_white.png) no-repeat;
   z-index: 2
+}
+header .h-fix .logo-m {
+  display: none;
 }
 
 /*gnb 메인메뉴*/

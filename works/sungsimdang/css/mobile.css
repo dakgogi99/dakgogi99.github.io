@@ -2,13 +2,17 @@
 
 /*고정메뉴*/
 header .h-fix .logo {
-  position: relative;
+  display: none;
+}
+header .logo-m {
+  position: absolute;
   left: 30px;
   top: 25px;
   width: 205px;
   height: 83px;
+  z-index: 4;
 }
-.h-fix .logo a {
+.logo-m a {
   display: block;
   width: 100%;
   height: 100%;
@@ -85,17 +89,47 @@ header .h-fix .logo {
 
 /*visual*/
 #visual {
+  position: relative;
   height: 600px;
   background: #0B0D0C url(../img/visual_bg_m.png) no-repeat center center;
+  background-size: 100% ;
   border-top: 4px solid #ec2024;
   box-sizing: border-box
 }
-
 /*visual 아래 롤링 버튼메뉴*/
 #visual .v-snb {
   display: none
 }
-
+/*visual snb*/
+#visual .v-snb-m {
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+.v-snb-m .prev {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+}
+.v-snb-m .prev a {
+  font-size: 26px;
+  line-height: 60px;
+  margin-left: 20px;
+  color: #ec2024
+}
+.v-snb-m .next {
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: #ec2024;  
+}
+.v-snb-m .next a {
+  font-size: 26px;
+  line-height: 60px;
+  margin-left: 26px;
+  color: #fff
+}
 /*menu*/
 #menu {
   background: #fff;
@@ -107,20 +141,20 @@ header .h-fix .logo {
   top: 55px;
   margin: auto;
   
-  width: 316px
+  width: 260px
 }
 #menu .title img {
   display: block;
   float: left;
-  width: 206px;
+  width: 180px;
   height: 100%;
 }
 #menu .title h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #ec2024;
-  padding-top: 67px;
-  padding-left: 215px;
+  padding-top: 60px;
+  padding-left: 190px;
 }
 
 /*brand*/
@@ -129,7 +163,7 @@ header .h-fix .logo {
   background: url(../img/section02_bg.png);
   opacity: 0.1;
   width: 100%;
-  height: 900px;
+  height: 100%;
 }
 .b-con .b-con-l {
   display: none;
@@ -137,30 +171,30 @@ header .h-fix .logo {
 .b-con .b-con-m {
   display: block;
   position: absolute;
-  top: 60px;
+  top: 40px;
   padding-left: 0;
 }
 .b-con .b-con-m img {
   display: block;
-  width: 100%;
+  width: 90%;
 }
 .b-con .b-con-r {
   position: absolute;
-  top: 485px;
-  padding-left: 130px
+  top: 350px;
+  padding-left: 80px
 }
 .b-con .b-con-r h2 {
-  font-size: 27px;
+  font-size: 24px;
 }
 .b-con .b-con-r img {
-  width: 300px;
+  width: 230px;
   height: auto;
-  margin-bottom: 30px
+  margin-bottom: 20px
 }
 .b-con .b-con-r .serif {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.3;
-  margin-bottom: 30px
+  margin-bottom: 20px
 }
 
 /*family*/
@@ -171,31 +205,44 @@ header .h-fix .logo {
   top: 95px;
   margin: auto;
   
-  width: 318px
+  width: 270px
 }
 .title img {
   display: block;
   float: left;
-  width: 180px;
+  width: 150px;
   height: 100%;
 }
 .title h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #ec2024;
-  padding-top: 47px;
-  padding-left: 190px;
+  padding-top: 38px;
+  padding-left: 160px;
 }
 /*footer*/
+#family footer {
+  height: 280px;
+}
+#family footer .com {
+  height: 230px;
+  background: url(../img/footer_pt.png) no-repeat;
+}
+.com .f-logo {
+  width: 150px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px
+}
 #family footer .com p {
-  padding: 0 20px;
-  font-size: 14px;
+  padding: 0 10px;
+  font-size: 12px;
   line-height: 1.5;
   text-align: center;
   box-sizing: border-box
 }
 #family footer .add address {
-  font-size: 14px
+  font-size: 12px
 }
 
 
