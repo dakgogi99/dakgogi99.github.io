@@ -290,6 +290,7 @@ header .gnb {
   top: 0;
   width: 70%;
   height: 700px;
+  overflow: hidden;
 }
 .product-sum .sum-img {
   width: 100%;

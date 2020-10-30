@@ -735,8 +735,14 @@ footer address {
   color: #fff;
   font-style: normal;
   bottom: 50px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+/*
   left: 50%;
   margin-left: -192px;
+*/
 }
 
 /*미디어쿼리*/
@@ -852,7 +858,6 @@ footer address {
 /*mobile ~639*/
 @media screen and (max-width: 639px) {
   
-  .visual .v-txt,
   .program .p-txt,
   .filmmarket .f-txt,
   .archive .a-txt,
@@ -861,15 +866,23 @@ footer address {
     padding-top: 110px;
     box-sizing: border-box;
   }
+  .visual .v-txt {
+    padding: 0;
+    padding-top: 190px;
+    box-sizing: border-box;
+  }
   
   .visual .v-txt h2,
   .program .p-txt h2,
   .filmmarket .f-txt h2,
-  .archive .a-txt h2,
-  .biffsalon .b-txt h2 {
+  .archive .a-txt h2 {
     font-size: 40px;
     margin-bottom: 15px;
     margin-left: 30px;
+  }
+  .biffsalon .b-txt h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
   }
   
   .visual .v-txt h3,
@@ -884,10 +897,12 @@ footer address {
   .visual .v-txt h4,
   .program .p-txt h4,
   .filmmarket .f-txt h4,
-  .archive .a-txt h4,
-  .biffsalon .b-txt h4 {
+  .archive .a-txt h4 {
     font-size: 25px;
     margin-left: 30px;
+  }
+  .biffsalon .b-txt h4 {
+    font-size: 25px;
   }
   .filmmarket .f-txt p,
   .archive .a-txt p {
@@ -1049,7 +1064,7 @@ footer address {
 
   .filmmarket .f-txt p {
     width: 500px;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 40px;
     box-sizing: border-box;
   }
@@ -1170,19 +1185,23 @@ footer address {
     margin: auto
   }
   footer .company {
+    position: absolute;
+    width: 90%;
     top: 550px;
     left: 0;
     right: 0;
-    width: 90%;
     margin: auto;
   }
   footer .f-snb {
+    margin: 0;
     padding: 20px 0;
     border-bottom: solid 1px #fff;
-    font-size: 13px;
+    font-size: 12px;
   }
   footer .f-snb a:not(last-child) {
-  margin-right: 5px;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
   }
   footer .f-ad1,
   footer .f-ad2 {
@@ -1194,8 +1213,9 @@ footer address {
     
     font-size: 15px;
   }
-  address {
-    font-size: 8px
+  footer address {
+    font-size: 10px;
+    margin: 0;
   }
 }
 
