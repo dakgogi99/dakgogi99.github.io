@@ -167,7 +167,8 @@ header .logo-m {
 /*brand*/
 #brand .bg-p {
   position: relative;
-  background: url(../img/section02_img_m.png)no-repeat;
+  background: url(../img/section02_img_m.png)  no-repeat center center;
+  background-size: 100% 900px;
   opacity: 1;
   width: 100%;
   height: 900px;
@@ -206,9 +207,14 @@ header .logo-m {
 }
 
 /*family*/
+#family {
+  background: #0B0D0C;
+  height: 1779px;
+}
 #family .bg-f {
   position: relative;
-  background: url(../img/section04_bg_m.png)no-repeat;
+  background: url(../img/section04_bg_m.png)  no-repeat center center;
+  background-size: 100% 1779px;
   opacity: 1;
   width: 100%;
   height: 1779px;
@@ -228,7 +234,7 @@ header .logo-m {
 }
 .title-m img {
   display: block;
-  float: left;
+  float: none;
   width: 169px;
   height: 100%;
 }
@@ -236,7 +242,7 @@ header .logo-m {
   font-size: 25px;
   font-weight: bold;
   color: #ec2024;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-left: 3px;
 }
 /*footer*/
