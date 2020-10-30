@@ -183,6 +183,7 @@ header .logo-m {
   top: 0px;
 }
 #brand .bg-p {
+  height: 900px;
   position: relative;
   background: #ffc74a url(../img/section02_img_m.png) no-repeat top center;
   background-size: 100% ;
@@ -194,7 +195,7 @@ header .logo-m {
 
 .b-con .b-con-r {
   position: absolute;
-  top: 418px;
+  top: 320px;
   padding-left: 60px
 }
 .b-con .b-con-r h2 {
@@ -206,7 +207,7 @@ header .logo-m {
   margin-bottom: 20px
 }
 .b-con .b-con-r .serif {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.3;
   margin-bottom: 20px
 }
