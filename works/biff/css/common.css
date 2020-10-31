@@ -1213,18 +1213,20 @@ footer address {
     position: relative;
     height: 900px;
     background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.32) 100px, transparent 0px),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.32) 80px, transparent 0px),
     linear-gradient(#4d44dd, #f51bc9);
   }
   .foot-con .spon {
     width: 90%;
-    height: 100px;
+    height: 80px;
+    width: 320px;
     margin: auto;
   }
   
   .foot-con .spon a {
-    width: 20%;
-    margin: 35px 5px;
+    display: inline-block;
+    width: 70px;
+    margin: 30px 5px;
   }
   .foot-con .spon img {
     width: 100%;
@@ -1246,8 +1248,9 @@ footer address {
   }
   footer .f-snb {
     margin: 0;
+    margin: auto;
     padding: 20px 0;
-    border-bottom: solid 1px #fff;
+    border-bottom: none;
     font-size: 13px;
     width: 330px;
   }
@@ -1255,6 +1258,10 @@ footer address {
     padding: 0;
     margin: 0;
     margin-right: 5px;
+  }
+  footer .f-ad1 {
+    border-top: 1px solid #fff;
+    padding-top: 10px
   }
   footer .f-ad1,
   footer .f-ad2 {
