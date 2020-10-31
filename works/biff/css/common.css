@@ -102,10 +102,9 @@ header select {
   background-color: #f51bc9;
   border-radius: 15px;
   outline: transparent;
-/*
   -webkit-appearance: none;
   -moz-appearance: none;
-*/
+  appearance: none;
 }
 header option {
   color: #fff;
@@ -972,9 +971,9 @@ footer address {
     float: none;
     width: 100%;
     margin: auto;
+    line-height: 60px;
     text-align: center;
     background: #4d44dd;
-    border-bottom: 1px solid #7068ef
   }
   header .gnb a:hover {
     text-decoration: none;
