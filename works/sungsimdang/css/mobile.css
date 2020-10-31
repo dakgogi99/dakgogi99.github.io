@@ -49,11 +49,11 @@ header .logo-m {
   padding: 0;
 }
 .ham-con article:nth-child(1) {
-  height: 370px;
+  height: 330px;
   padding: 120px 0 0 20px;
 }
 .ham-con article:nth-child(2) {
-  height: 370px;
+  height: 330px;
   padding: 120px 0 0 20px;
 }
 .ham-con article:nth-child(3) {
@@ -63,7 +63,7 @@ header .logo-m {
   box-sizing: border-box;
 }
 .ham-con article:nth-child(4) {
-  height: 330px;
+  height: 370px;
   top: 370px;
   padding: 50px 0 0 20px;
   box-sizing: border-box;
