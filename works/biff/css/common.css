@@ -102,16 +102,13 @@ header select {
   background-color: #f51bc9;
   border-radius: 5px;
   outline: transparent;
-/*
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-*/
 }
+/*
 header select {
   -webkit-appearance: none;
-/*  -webkit-border-radius: 0*/
+  -webkit-border-radius: 0
 }
+*/
 header option {
   color: #fff;
 }
