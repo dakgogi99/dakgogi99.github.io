@@ -100,11 +100,17 @@ header select {
   padding-left: 5px;
   border: 1px solid #4d44dd;
   background-color: #f51bc9;
-  border-radius: 15px;
+  border-radius: 5px;
   outline: transparent;
+/*
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+*/
+}
+header select {
+  -webkit-appearance: none;
+/*  -webkit-border-radius: 0*/
 }
 header option {
   color: #fff;
