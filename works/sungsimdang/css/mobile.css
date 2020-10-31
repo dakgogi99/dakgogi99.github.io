@@ -300,11 +300,15 @@ header .logo-m {
   position: absolute;
   bottom: 60px;
   left: 50%;
-  margin-left: -76px;
+  margin-left: -65px;
 }
 .mobile .board-sns a {
   display: block;
-  float: left
+  float: left;
+  height: 30px;
+}
+.mobile .board-sns a img {
+  height: 100%
 }
 .mobile .board-sns a:not(last-child) {
   margin-right: 20px

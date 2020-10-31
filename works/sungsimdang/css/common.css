@@ -400,9 +400,10 @@ header .h-fix .logo-m {
 
 /*visual*/
 #visual {
-  height: 100%;
+  position: relative;
+  height: 916px;
   background: #0B0D0C url(../img/visual_bg.png) no-repeat center center;
-/*  border-top: 4px solid #ec2024;*/
+  border-top: 4px solid #ec2024;
 }
 
 /*visual 아래 롤링 버튼메뉴*/
@@ -735,7 +736,7 @@ header .h-fix .logo-m {
   display: block;
 }
 #family footer .com p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   text-align: center;
 }
