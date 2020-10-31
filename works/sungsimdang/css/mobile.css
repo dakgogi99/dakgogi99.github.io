@@ -312,14 +312,14 @@ header .logo-m {
 #family {
   position: relative;
   background: #0B0D0C;
-  height: 1779px;
+  height: 1700px;
   top: 0px;
 }
 #family .bg-f {
   background: #0B0D0C url(../img/section04_bg_m.png) no-repeat top center;
   background-size: 100%;
   opacity: 1;
-  height: 1779px;
+  height: 1700px;
 }
 #family .title {
   display: none
@@ -337,7 +337,7 @@ header .logo-m {
 .title-m img {
   display: block;
   float: none;
-  width: 169px;
+  width: 170px;
   height: 100%;
 }
 .title-m h2 {
