@@ -149,7 +149,7 @@ header .logo-m {
 #menu {
   background: #fff;
   position: relative;
-  height: 890px;
+  height: 800px;
   top: 0px;
 }
 #menu .title {
@@ -179,7 +179,7 @@ header .logo-m {
 #brand {
   position: relative;
   background: #ffc74a;
-  height: 900px;
+  height: 700px;
 /*  width: 100%;*/
   top: 0px;
 }
@@ -258,13 +258,13 @@ header .logo-m {
 #community .mobile .board {
   position: absolute;
   left: 50%;
-  margin-left: -170px;
-  width: 340px;
-  height: 60px;
+  margin-left: -140px;
+  width: 280px;
+  height: 40px;
   background: #ffc74a
 }
 #community .mobile .board:first-child {
-  top: 80px;
+  top: 100px;
 }
 #community .mobile .board:nth-child(2) {
   top: 160px;
@@ -272,26 +272,27 @@ header .logo-m {
 .mobile .board a {
   display: block;
   width: 440px;
-  height: 60px
+  height: 40px
 }
 .mobile .board a p {
-  padding-left: 30px;
-  font-size: 25px;
-  line-height: 60px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
   float: left
 }
 .mobile .board a span {
   position: absolute;
   right: 0;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: #000
 }
 .mobile .board a span i {
   font-size: 24px;
   color: #ffc74a;
-  line-height: 60px;
-  padding-left: 26px;
+  line-height: 40px;
+  padding-left: 15px;
 }
 .mobile .board-sns {
   position: absolute;
