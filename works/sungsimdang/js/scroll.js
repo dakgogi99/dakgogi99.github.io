@@ -13,7 +13,7 @@ $(function(){
   
   
   //브라우저 높이값 == section 높이값
-  $section.height(winH);
+  /*$section.height(winH);*/
   //브라우저 크기가 바뀌면 == section 높이값
   /*$(window).on('resize', function(){
     $section.height($(window).height());
