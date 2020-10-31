@@ -410,6 +410,7 @@ header select::-ms-expand {
 .archive {
   height: 950px;
   background: #4d44dd url(../img/archive-bg.png) no-repeat left top;
+ /* background: #4d44dd;*/
 }
 .archive .a-con {
   position: relative;
@@ -947,7 +948,7 @@ footer address {
   
   header .gnb {
     display: none;
-    top: 82px;
+    top: 62px;
     left: 0;
     width: 100%;
   }
@@ -960,6 +961,7 @@ footer address {
     margin: auto;
     text-align: center;
     background: #4d44dd;
+    border-bottom: 1px solid #7068ef
   }
   header .gnb a:hover {
     text-decoration: none;
@@ -986,7 +988,7 @@ footer address {
   .btn-m .btn-off {
     display: none;
     position: absolute;
-    top: 21px;
+    top: 12px;
     left: 20px;
     width: 40px;
     height: 40px
@@ -1076,8 +1078,9 @@ footer address {
   
   .filmmarket {
     height: 1000px;
-    background: #f51bc9 url(../img/flimmarket-bgimg.png) no-repeat left top/contain;
-    background-attachment: fixed;
+    background: #f51bc9;
+    /*background: #f51bc9 url(../img/flimmarket-bgimg.png) no-repeat left top/contain;
+    background-attachment: fixed;*/
   }
 
   .filmmarket .f-txt p {
@@ -1089,7 +1092,8 @@ footer address {
   
   .filmmarket .f-txt p {
     width: 90%;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    padding-right: 20px
   }
   .filmmarket .f-con2 {
     width: 100%;
@@ -1114,8 +1118,9 @@ footer address {
   }
   
   .archive {
-  height: 950px;
-  background: #4d44dd url(../img/archive-bg-m.png) no-repeat left top; 
+    height: 950px;
+    /*background: #4d44dd url(../img/archive-bg-m.png) no-repeat left top;*/
+    background: #4d44dd; 
   }
   .archive .snb {
     display: none;
