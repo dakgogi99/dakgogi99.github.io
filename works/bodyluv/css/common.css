@@ -288,18 +288,23 @@ header .gnb {
   position: relative;
   top: 0;
   left: 0;
-  width: 1830px;
+/*  width: 1830px;*/
+  width: 100%;
   height: 700px;
   overflow: hidden;
 }
 .con1-v .slide-list {
-  width: 1830px;
+/*  width: 1830px;*/
+  width: 100%;
   height: 100%;
 }
 .slide-box .slide {
   position: absolute;
-  left: 0;
+/*  left: 0;*/
+  left: 50%;
+  margin-left: -915px;
   top: 0;
+  width: 100%;
   display: none;
 }
 .slide-box .slide img {
@@ -429,13 +434,17 @@ header .gnb {
 }
 /*상품목록*/
 .con2-best .pro-con {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
   margin: auto;
   padding-left: 17.5px
 }
 .pro-con .product {
   float: left;
-/*  width: 20%;*/
-  width: 315px;
+  width: 20%;
+/*  width: 315px;*/
   height: 440px;
   margin: 0 10px;
 /*  box-sizing: border-box;*/
@@ -568,18 +577,23 @@ header .gnb {
   position: relative;
   top: 0;
   left: 0;
-  width: 1830px;
+/*  width: 1830px;*/
+  width: 100%;
   height: 470px;
   overflow: hidden;
 }
 .con3-b .slide-list3 {
-  width: 1830px;
+/*  width: 1830px;*/
+  width: 100%;
   height: 100%;
 }
 .slide-box3 .slide3 {
   position: absolute;
-  left: 0;
+/*  left: 0;*/
+  left: 50%;
+  margin-left: -915px;
   top: 0;
+  width: 100%;
   display: none
 }
 .slide-box3 .slide3 img {
