@@ -1064,7 +1064,7 @@ footer address {
     width: 80px;
     height: 50px;
     top: 50px;
-    left: 80%;
+    right: 10%;
   }
   .program .snb-m select {
     background: #4d44dd;
