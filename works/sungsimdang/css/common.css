@@ -425,7 +425,9 @@ header .h-fix .logo-m {
 .slide-list .slide img {
   width: 100%;
 }
-
+#visual .slide-list-m {
+  display: none
+}
 /*visual 아래 롤링 버튼메뉴*/
 #visual .v-snb {
   position: absolute;
