@@ -103,19 +103,16 @@ header select {
   border-radius: 5px;
   outline: transparent;
 }
-/*
 header select {
   -webkit-appearance: none;
-  -webkit-border-radius: 0
 }
-*/
 header option {
   color: #fff;
 }
 
-header select:-ms-expand {
+/*header select:-ms-expand {
   display: none;
-}
+}*/
 
 /*메인 배너*/
 .visual {
