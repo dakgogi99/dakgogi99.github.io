@@ -43,6 +43,14 @@ header .h-fix .logo {
   width: 100%;
   height: 100%;
   background: url(../img/logo_white.png) no-repeat;
+  z-index: 2;
+  transition: all 0.3s ease
+}
+.h-fix .logo.black a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo_black.png) no-repeat;
   z-index: 2
 }
 header .h-fix .logo-m {
@@ -61,6 +69,9 @@ header .h-fix .logo-m {
   display: block;
   float: left;
   padding: 0 20px;
+}
+.h-fix .gnb.black a {
+  color: #0B0D0C
 }
 
 /*왼쪽 네비게이션 메뉴*/
@@ -84,18 +95,33 @@ header .h-fix .logo-m {
   height: 12px;
   background: transparent;
   border-radius: 7px;
-  border: 1px solid #fff
+  border: 1px solid #fff;
+  transition: all .3s ease
 }
 .side li div {
   display: none;
   color: #fff;
   font-weight: normal;
   letter-spacing: 1.5px;
-  font-size: 13px
+  font-size: 13px;
+  transition: all .3s ease
 }
+
+/*왼쪽네비게이션 블랙*/
+.side.black li a span {
+  border: 1px solid #0B0D0C
+}
+.side.black li div {
+  color: #0B0D0C;
+}
+
+
 /*jquery*/
 .side a span.on {
   background: #fff
+}
+.side.black a span.on {
+  background: #0B0D0C
 }
 .side div.on {
   display: block;
@@ -110,7 +136,8 @@ header .h-fix .logo-m {
   height: 60px;
   border-radius: 30px;
   background: #ec2024;
-  z-index: 5  
+  z-index: 5;
+  transition: all .3s ease  
 }
 .h-fix .ham-btn a {
   position:absolute;
@@ -124,6 +151,7 @@ header .h-fix .logo-m {
   width: 20px;
   height: 2px;
   background: #fff;
+  transition: all .3s ease
 }
 .ham-btn-on .line1 {
   top: 22px;
@@ -151,6 +179,17 @@ header .h-fix .logo-m {
 }
 .ham-btn-off .line3 {
   transform: rotate(45deg)
+}
+
+/*블랙버전*/
+.h-fix .ham-btn.black {
+  background: #fff;
+}
+.ham-btn.black .ham-btn-on > div {
+  background: #0B0D0C;  
+}
+.ham-btn.black .ham-btn-off > div {
+  background: #0B0D0C;
 }
 
 /*햄버거 메뉴 on 할때 전체 메뉴*/
@@ -333,6 +372,7 @@ header .h-fix .logo-m {
   border-radius: 30px;
   background: #ec2024;
   margin-bottom: 5px;
+  transition: all .3s ease
 }
 .r-menu > div a:hover {
   background: #fff;
@@ -346,14 +386,31 @@ header .h-fix .logo-m {
   color: #fff;
   text-align: center;
   padding-top: 18px;
-  padding-left: 17px
+  padding-left: 17px;
+  transition: all .3s ease
 }
 .r-menu > div p {
   color: #fff;
   font-size: 13px;
   text-align: center;
 }
-.r-menu .customur{}
+
+/*오른쪽메뉴 블랙버전*/
+.h-fix .r-menu.black > div a {
+  background: #fff;
+}
+.h-fix .r-menu.black > div a i {
+  color: #0B0D0C
+}
+.r-menu.black > div p {
+  color: #0B0D0C
+}
+.r-menu.black > div a:hover {
+  background: #0B0D0C;
+}
+.r-menu.black > div a:hover i {
+  color: #fff
+}
 
 /*탑버튼*/
 .top-btn {
@@ -389,6 +446,22 @@ header .h-fix .logo-m {
   color: #fff;
   font-size: 13px;
   text-align: center;
+}
+/*탑버튼 블랙버전*/
+.top-btn.black a {
+  background: #fff;
+}
+.top-btn.black a i {
+  color: #0B0D0C
+}
+.top-btn.black p {
+  color: #0B0D0C
+}
+.top-btn.black a:hover {
+  background: #0B0D0C;
+}
+.top-btn.black a:hover i {
+  color: #fff
 }
 
 /*main*/
