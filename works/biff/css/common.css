@@ -376,6 +376,7 @@ header select::-ms-expand {
   width: 100%;
   height: 100%;
   background:#0af;
+  overflow: hidden
 }
 .filmmarket .f-img a.on {
   display: block;
