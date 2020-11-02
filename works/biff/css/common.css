@@ -185,6 +185,9 @@ header option {
   top: 90px;
   right: 80px;
 }
+.program .snb-m {
+  display: none
+}
 .program .snb a {
   display: block;
   float: left;
