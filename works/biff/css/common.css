@@ -100,11 +100,11 @@ header select {
   padding-left: 5px;
   border: 1px solid #4d44dd;
   background-color: #f51bc9;
-  border-radius: 5px;
-  outline: transparent;
+/*  border-radius: 5px;*/
+/*  outline: transparent;*/
 }
-header select {
-  -webkit-appearance: none;
+header select:focus {
+    outline: none
 }
 header option {
   color: #fff;
@@ -339,8 +339,8 @@ header option {
   text-align: center;
   box-sizing: border-box;
   
-  border-right: 1.5px solid #2e2b2d;
-  color: #2e2b2d;
+  border-right: 1.5px solid #f51bc9;
+  color: #f51bc9;
   background: #dbd9d9  
 }
 
@@ -353,12 +353,12 @@ header option {
   text-align: center;
   box-sizing: border-box;
   
-  color: #2e2b2d;
+  color: #f51bc9;
   background: #dbd9d9
 }
 .filmmarket .snb a.on {
   color: #fff;
-  background: #2e2b2d;
+  background: #f51bc9;
 }
 .filmmarket .snb a:hover {
   color: #fff;
@@ -565,7 +565,9 @@ header option {
   color: #4d44dd;
   text-decoration: underline;
 }
-
+.biffsalon .snb-m {
+  display: none
+}
 /*풋터*/
 footer {
   position: relative;
@@ -671,6 +673,9 @@ footer form li input {
   width: 260px;
   height: 30px;
 }
+footer form li input:focus {
+    outline: none
+  }
 footer form li .ch {
   width: 15px;
   height: 15px;
@@ -1054,6 +1059,26 @@ footer address {
 */
     display: none;
   }
+  .program .snb-m {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 50px;
+    left: 80%;
+  }
+  .program .snb-m select {
+    background: #4d44dd;
+    padding: 5px 10px;
+    color: #fff
+  }
+  .program .snb-m select:focus {
+    outline: none
+  }
+  .snb-m select  option {
+    background: #dbd9d9;
+    color: #4d44dd;
+    text-align: center;
+  }
   .program .p-img-ms {
     top: 370px;
     left: 60px;    
@@ -1191,12 +1216,36 @@ footer address {
     background: #eee;  
   }
   .biffsalon .b-txt {
-    top: 50px;
+    top: 100px;
     padding-left: 0;
     padding-top: 30px;
   }
   .biffsalon .snb {
     display: none;
+  }
+  .biffsalon .snb-m {
+    display: block;
+  }
+  .biffsalon .snb-m select {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    width: 180px;
+    height: 40px;
+    padding: 5px 10px;
+    line-height: 40px;
+    background: #4d44dd;
+    color: #fff
+  }
+  .biffsalon .snb-m select:focus {
+    outline: none
+  }
+  .biffsalon .snb-m option {
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    background: #dbd9d9;
+    color: #4d44dd
   }
   footer {
     position: relative;
