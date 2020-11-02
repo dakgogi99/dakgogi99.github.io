@@ -34,7 +34,8 @@ header .logo-m {
 .h-fix .ham-btn {
   top: 25px;
   right: 10px;
-  border: 1px solid #fff
+  border: 1px solid #fff;
+  box-sizing: border-box
 }
 
 /*햄버거 메뉴 on 할때 전체 메뉴*/
@@ -99,7 +100,8 @@ header .logo-m {
   border-radius: 40px;
   background: #ec2024;
   margin-bottom: 5px;
-  border: 1px solid #fff
+  border: 1px solid #fff;
+  box-sizing: border-box
 }
 /*visual*/
 #visual {
