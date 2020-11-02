@@ -32,11 +32,9 @@ header .logo-m {
 
 /*햄버거 메뉴*/
 .h-fix .ham-btn {
-  position: fixed;
   top: 25px;
   right: 10px;
   border: 1px solid #fff
-
 }
 
 /*햄버거 메뉴 on 할때 전체 메뉴*/
@@ -91,7 +89,6 @@ header .logo-m {
 
 /*탑버튼*/
 .top-btn {
-  position: fixed;
   bottom: 25px;
   right: 10px;
 }
@@ -120,22 +117,30 @@ header .logo-m {
   display: none
 }
 #visual .slide-list-m {
-  position: relative
+  position: relative;
+  display: block;
+  height: 600px;
 }
 #visual .slide-list-m .slide-m {
   position: absolute;
-  width: 500px;
+  display: block;
+  width: 100%;
   left: 0;
   right: 0;
-  top: 100px;
+  top: 110px;
   margin: auto;  
+}
+#visual .slide-list-m .slide-m img {
+  width: 100%;
 }
 /*visual 아래 롤링 버튼메뉴*/
 #visual .v-snb {
-  display: none
+  display: block;
+  bottom: 0;
+  bottom: 30px
 }
 /*visual snb*/
-#visual .v-snb-m {
+/*#visual .v-snb-m {
   position: absolute;
   bottom: 0;
   left: 0
@@ -163,7 +168,7 @@ header .logo-m {
   line-height: 60px;
   margin-left: 26px;
   color: #fff
-}
+}*/
 /*menu*/
 #menu {
   background: #fff;

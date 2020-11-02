@@ -19,8 +19,7 @@ $(function(){
   /*$(window).on('resize', function(){
     $section.height($(window).height());
   });*/
-  
-  
+    
   $gnb.on('click', 'li a', function(e){
     
     var winH = $(window).height(),

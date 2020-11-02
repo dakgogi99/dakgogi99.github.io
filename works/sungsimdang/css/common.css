@@ -416,7 +416,7 @@ header .h-fix .logo-m {
 }
 #visual .slide-list .slide {
   position: absolute;
-  display: none;
+  display: block;
   left: 0;
   right: 0;
   top: 200px;
