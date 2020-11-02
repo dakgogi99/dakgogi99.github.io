@@ -137,12 +137,12 @@ header .logo-m {
 }
 /*visual 아래 롤링 버튼메뉴*/
 #visual .v-snb {
-  display: block;
-  bottom: 0;
-  bottom: 30px
+  display: none;
+ /* bottom: 0;
+  bottom: 30px*/
 }
 /*visual snb*/
-/*#visual .v-snb-m {
+#visual .v-snb-m {
   position: absolute;
   bottom: 0;
   left: 0
@@ -170,7 +170,8 @@ header .logo-m {
   line-height: 60px;
   margin-left: 26px;
   color: #fff
-}*/
+}
+
 /*menu*/
 #menu {
   background: #fff;
