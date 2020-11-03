@@ -198,34 +198,60 @@ header option {
   color: #f51bc9;
   text-decoration: underline;
 }
-.program .p-img-ms {
-  position: relative; 
+.program .wrap {
+  position: relative;
+  left: 30%;
   top: 160px;
-  left: 700px;
+  width: 70%;
+  height: 500px;
+  overflow: hidden
 }
-.program .p-img {
-  width: 1600px;
+.program .swiper-container-p {
+  position: relative; 
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 100%
+}
+.program .swiper-wrapper {
+  width: 4000px;
   height: 450px;
+  overflow: hidden;
 }
-.program .p-img a {
+.program .swiper-wrapper a {
   width: 300px;
   height: 400px;
   display: block;
   float: left;
+  overflow: hidden;
   transition: all 0.3s
 }
-.program .p-img a:hover {
+.program .swiper-wrapper a:hover {
   transform: scale(1.05)
 }
-.p-img .p-img01 {
-  height: 100%;
+.swiper-slide {
+  /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+.swiper-wrapper .p-img01 {
   margin-right: 40px;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 10px 10px 15px #dbd9d9;
   background: 
     linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px),
-    url(../img/program-img01.jpg);
+    url(../img/program-img01.jpg)no-repeat;
 }
 .p-img .p-img02 {
   height: 100%;
@@ -235,7 +261,7 @@ header option {
   box-shadow: 10px 10px 15px #dbd9d9;
   background: 
     linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
-    url(../img/program-img02.jpg);
+    url(../img/program-img02.jpg)no-repeat;
 }
 .p-img .p-img03 {
   height: 100%;
@@ -245,7 +271,7 @@ header option {
   box-shadow: 10px 10px 15px #dbd9d9;
   background: 
     linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
-    url(../img/program-img03.jpg);
+    url(../img/program-img03.jpg)no-repeat;
 }
 .p-img .p-img04 {
   height: 100%;
@@ -255,7 +281,7 @@ header option {
   box-shadow: 10px 10px 15px #dbd9d9;
   background: 
     linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
-    url(../img/program-img04.jpg);
+    url(../img/program-img04.jpg)no-repeat;
 }
 .p-img a h4 {
   position: absolute;
@@ -448,16 +474,22 @@ header option {
   color: #fff
 }
 
-.archive .a-img-ms {
-/*  position: relative;*/
+.archive .swiper-container {
+  position: relative;
   padding-left: 190px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+/*  overflow: hidden;*/
+  /*width: 280px;
+  height: 500px;*/
+}
+.archive .swiper-wrapper {
+  width: 4400px;
+  height: 500px;
   overflow: hidden;
 }
-.archive .a-img {
-  width: 2200px;
-  height: 500px;
-}
-.a-img-ms .a-img a {
+.swiper-container .swiper-wrapper a {
   width: 280px;
   height: 280px;
   display: block;
@@ -466,11 +498,11 @@ header option {
   margin-top: 20px;
   transition: all 1s
 }
-.a-img-ms .a-img a:hover {
+.swiper-container .swiper-wrapper a:hover {
   transform: scale(1.1)
 }
 
-.a-img-ms .a-img01 span {
+.swiper-container .a-img01 span {
   display: block;
   width: 270px;
   height: 270px;
@@ -478,35 +510,36 @@ header option {
   overflow: hidden;
   background: url(../img/archive-img01.png) no-repeat center center / cover
 }
-.a-img-ms .a-img02 span {
+.swiper-container .a-img02 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img02.png) no-repeat center center / cover
 }
-.a-img-ms .a-img03 span {
+.swiper-container .a-img03 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img03.png) no-repeat center center / cover
 }
-.a-img-ms .a-img04 span {
+.swiper-container .a-img04 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img04.png) no-repeat center center / cover
 }
-.a-img-ms .a-img05 span {
+.swiper-container .a-img05 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img05.png) no-repeat center center / cover
 }
-.a-img-ms p {
+.swiper-container p {
+  width: 270px;
   font-size: 20px;
   color: #fff;
   text-align: center;
@@ -782,8 +815,16 @@ footer address {
     padding-top: 130px;
     padding-left: 120px;
   }
-  .program .p-img-ms {
+  .program .wrap {
+    position: relative;
+    left: 0;
     top: 500px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden
+  }
+  .program .swiper-container-p {
+    top: 0;
     left: 120px;
   }
   .filmmarket {
@@ -850,9 +891,13 @@ footer address {
   .archive .a-txt {
     padding-left: 120px;
   }
-  .archive .a-img-ms {
+  .archive .swiper-container-t {
+    position: relative;
     padding-left: 20px;
-    margin-left: 120px;
+    width: 100%;
+    height: 100%;
+/*    margin-left: 120px;*/
+    box-sizing: border-box;
   }
   .biffsalon .b-txt {}
   .foot-con .spon {
@@ -1082,9 +1127,17 @@ footer address {
     color: #4d44dd;
     text-align: center;
   }
-  .program .p-img-ms {
+  .program .wrap {
+    position: relative;
+    left: 0;
     top: 370px;
-    left: 60px;    
+    width: 100%;
+    height: 500px;
+    overflow: hidden
+  }
+  .program .swiper-container-p {
+    top: 0px;
+    left: 0px;    
   }
   .program .p-img {
     display: block;
@@ -1180,16 +1233,21 @@ footer address {
     right: 20px;
     top: 360px;
   }
-  .archive .a-img-ms {
-    padding-left: 20px;
-    margin-left: -250px;
+  .archive .swiper-container-m {
+/*    padding-left: 20px;*/
+/*    margin-left: -250px;*/
+    position: relative;
     margin-top: 200px;
-  }
-  .archive .a-img {
-    width: 2200px;
+    padding: 0;
+    width: 100%;
     height: 700px;
   }
-  .a-img-ms .a-img a {
+  .archive .swiper-wrapper {
+/*    width: 2200px;*/ 
+    width: 4400px;
+    height: 500px;
+  }
+  .swiper-container-m .swiper-wrapper a {
     width: 220px;
     height: 220px;
     display: block;
