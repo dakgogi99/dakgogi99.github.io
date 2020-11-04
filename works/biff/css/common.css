@@ -27,7 +27,7 @@ header {
   width:100%;
   background: #4d44dd;
   border-bottom: solid 2px #f51bc9;
-  z-index: 1; 
+  z-index: 4; 
 }
 header .h-con {
 /*  position: relative;*/
@@ -229,8 +229,8 @@ header option {
 .program .swiper-wrapper a:hover {
   transform: scale(1.05)
 }
-.swiper-slide {
-  /* Center slide text vertically */
+/*.swiper-slide {
+   Center slide text vertically 
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -243,7 +243,7 @@ header option {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-}
+}*/
 .swiper-wrapper .p-img01 {
   margin-right: 40px;
   padding: 20px;
@@ -282,6 +282,46 @@ header option {
   background: 
     linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
     url(../img/program-img04.jpg)no-repeat;
+}
+.p-img .p-img05 {
+  height: 100%;
+  margin-right: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 15px #dbd9d9;
+  background: 
+    linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
+    url(../img/program-img05.jpg)no-repeat;
+}
+.p-img .p-img06 {
+  height: 100%;
+  margin-right: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 15px #dbd9d9;
+  background: 
+    linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
+    url(../img/program-img06.jpg)no-repeat;
+}
+.p-img .p-img07 {
+  height: 100%;
+  margin-right: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 15px #dbd9d9;
+  background: 
+    linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
+    url(../img/program-img07.jpg)no-repeat;
+}
+.p-img .p-img08 {
+  height: 100%;
+  margin-right: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 15px #dbd9d9;
+  background: 
+    linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.32) 0px), 
+    url(../img/program-img08.jpg)no-repeat;
 }
 .p-img a h4 {
   position: absolute;
@@ -391,7 +431,7 @@ header option {
 }
 .filmmarket .snb a:hover {
   color: #fff;
-  background: #2e2b2d;
+  background: #f51bc9;
 }
 
 .filmmarket .f-img {
@@ -1290,13 +1330,15 @@ footer address {
   .biffsalon .snb-m select {
     position: absolute;
     top: 50px;
-    right: 10%;
+    right: 5%;
     width: 180px;
     height: 40px;
     padding: 5px 10px;
     line-height: 40px;
     background: #4d44dd;
-    color: #fff
+    color: #fff;
+    font-size: 14px;
+    z-index: 5
   }
   .biffsalon .snb-m select:focus {
     outline: none

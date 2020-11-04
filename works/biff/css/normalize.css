@@ -390,3 +390,20 @@ a {
 .blind {
   display: none
 }
+input {
+  /*ios대응*/
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+select {
+  /*ios대응*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  background: url('../img/arr_slick.png') no-repeat 98% 50% #fff
+}
+select::-ms-expand {
+  display: none;
+}
