@@ -487,8 +487,12 @@ header option {
 }
 .archive .snb {
   position: absolute;
+  display: block;
   top: 90px;
   right: 80px;
+}
+.archive .snb-m {
+  display: none;
 }
 .a-con .snb a {
   display: block;
@@ -1138,6 +1142,7 @@ footer address {
     margin: auto;
   }
   .program {
+    position: relative;
     height: 820px;
   }
   .program .snb {
@@ -1149,23 +1154,36 @@ footer address {
   }
   .program .snb-m {
     position: absolute;
-    width: 80px;
-    height: 50px;
-    top: 50px;
-    right: 10%;
+    display: block;
+    width: 60px;
+    top: 0;
+    right: 5%;
+    z-index: 4
   }
   .program .snb-m select {
-    background: #4d44dd;
-    padding: 5px 10px;
-    color: #fff
+    position: absolute;
+    display: block;
+    top: 50px;
+    right: 5%;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 14px;
+    background: url('../img/arr_slick.png') no-repeat 98% 50% #4d44dd;
+    z-index: 5
+  }
+  
+  .program .snb-m option {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background: #dbd9d9;
+    color: #4d44dd
   }
   .program .snb-m select:focus {
     outline: none
-  }
-  .snb-m select  option {
-    background: #dbd9d9;
-    color: #4d44dd;
-    text-align: center;
   }
   .program .wrap {
     position: relative;
@@ -1256,11 +1274,48 @@ footer address {
   
   .archive {
     height: 950px;
+    position: relative;
     /*background: #4d44dd url(../img/archive-bg-m.png) no-repeat left top;*/
     background: #4d44dd; 
   }
   .archive .snb {
     display: none;
+  }
+  .archive .snb-m {
+    display: block;
+  }
+  .archive .snb-m {
+    position: absolute;
+    display: block;
+    width: 60px;
+    top: 0;
+    right: 5%;
+    z-index: 4
+  }
+  .archive .snb-m select {
+    position: absolute;
+    display: block;
+    top: 50px;
+    right: 5%;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    vertical-align: top;
+    color: #4d44dd;
+    font-size: 14px;
+    background: url('../img/arr_slick_b.png') no-repeat 98% 50% #fff;
+    z-index: 5
+  }
+  
+  .archive .snb-m option {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background: #dbd9d9;
+    color: #4d44dd
+  }
+  .archive .snb-m select:focus {
+    outline: none
   }
   .archive .a-txt {
 /*    padding-left: 120px;*/
@@ -1332,7 +1387,7 @@ footer address {
     top: 50px;
     right: 5%;
     width: 170px;
-    height: 40px;
+    height: 30px;
     padding: 5px;
     vertical-align: top;
     color: #fff;
@@ -1340,16 +1395,15 @@ footer address {
     background: url('../img/arr_slick.png') no-repeat 98% 50% #4d44dd;
     z-index: 5
   }
-  ?
-  .biffsalon .snb-m select:focus {
-    outline: none
-  }
   .biffsalon .snb-m option {
     display: block;
     padding: 5px 10px;
     text-align: center;
     background: #dbd9d9;
     color: #4d44dd
+  }
+  .biffsalon .snb-m select:focus {
+    outline: none
   }
   footer {
     position: relative;
