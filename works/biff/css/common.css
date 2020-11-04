@@ -27,7 +27,7 @@ header {
   width:100%;
   background: #4d44dd;
   border-bottom: solid 2px #f51bc9;
-  z-index: 4; 
+  z-index: 10; 
 }
 header .h-con {
 /*  position: relative;*/
@@ -1172,7 +1172,7 @@ footer address {
     color: #fff;
     font-size: 14px;
     background: url('../img/arr_slick.png') no-repeat 98% 50% #4d44dd;
-    z-index: 5
+    z-index: 3
   }
   
   .program .snb-m option {
