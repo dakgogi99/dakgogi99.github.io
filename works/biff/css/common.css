@@ -97,14 +97,14 @@ header select {
   vertical-align: top;
   color: #fff;
   width: 55px;
-  padding-left: 5px;
+  padding: 5px;
   border: 1px solid #4d44dd;
   background-color: #f51bc9;
 /*  border-radius: 5px;*/
 /*  outline: transparent;*/
 }
 header select:focus {
-    outline: none
+  outline: none
 }
 header option {
   color: #fff;
@@ -1331,15 +1331,16 @@ footer address {
     position: absolute;
     top: 50px;
     right: 5%;
-    width: 180px;
+    width: 170px;
     height: 40px;
-    padding: 5px 10px;
-    line-height: 40px;
-    background: #4d44dd;
+    padding: 5px;
+    vertical-align: top;
     color: #fff;
     font-size: 14px;
+    background: url('../img/arr_slick.png') no-repeat 98% 50% #4d44dd;
     z-index: 5
   }
+  ?
   .biffsalon .snb-m select:focus {
     outline: none
   }
