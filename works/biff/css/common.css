@@ -1370,7 +1370,7 @@ footer address {
     top: 360px;
   }
   .archive .swiper-container {
-    padding-left: 20px;
+    left: 60px;
 /*    margin-left: -250px;*/
     position: relative;
     margin-top: 200px;

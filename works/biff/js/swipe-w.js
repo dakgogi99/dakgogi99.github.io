@@ -1,7 +1,7 @@
 $(function(){
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 2,
-      spaceBetween: '1%',
+      slidesPerView: 1,
+      spaceBetween: '5%',
       // init: false,
       pagination: {
         el: '.swiper-pagination',
