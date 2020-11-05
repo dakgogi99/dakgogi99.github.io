@@ -13,44 +13,35 @@ $(function(){
       $rMenu = $main.find('.r-menu'),
       $topBtn = $main.find('.top-btn'),
       $section = $main.find('.content'),
-      $menuH = $menu.find(winH),
-      $brandH = $brand.find(winH),
-      $communityH = $community.find(winH),
-      $familyH = $family.find(winH);
+      $menuH = $menu.offset().top,
+      $brandH = $brand.offset().top,
+      $communityH = $community.offset().top,
+      $familyH = $family.offset().top;
+     
   
-  $(window).on('scroll', function(){
+  /*$(window).ready(function(){
     
-    var scrollTop = $(window).scrollTop() + winH/2;
-    
-    if($(winH).scrollTop < menuH){
-      $logo.addClass('black');
-      $side.addClass('black');
-      $hamBtn.addClass('black');
-      $gnb.addClass('black');
-      $rMenu.addClass('black');
-      $topBtn.addClass('black');
-    } else if($(winH).scrollTop < brandH) {
-      $logo.addClass('black');
-      $side.addClass('black');
-      $hamBtn.addClass('black');
-      $gnb.addClass('black');
-      $rMenu.addClass('black');
-      $topBtn.addClass('black');
-    } else if($(winH).scrollTop < communityH) {
-      $logo.addClass('black');
-      $side.addClass('black');
-      $gnb.addClass('black');
-      $hamBtn.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    } else if ($(winH).scrollTop < familyH) {
-      $logo.removeClass('black');
-      $side.removeClass('black');
-      $gnb.removeClass('black');
-      $hamBtn.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    } else {
+    $(wiindow).scroll(function(){
+      
+      var winH = $(window).height(),
+      scrollTop = $(window).scrollTop() + winH / 2;
+      
+      if(scrollTop < $menuH ){
+        $logo.fadeOut('black');
+        $side.fadeOut('black');
+        $hamBtn.fadeOut('black');
+        $gnb.fadeOut('black');
+        $rMenu.fadeOut('black');
+        $topBtn.fadeOut('black');
+        
+      } else if (scrollTop < $familyH){
+        $logo.addClass('black');
+        $side.addClass('black');
+        $hamBtn.addClass('black');
+        $gnb.addClass('black');
+        $rMenu.addClass('black');
+        $topBtn.addClass('black');       
+      } else {
       $logo.removeClass('black');
       $side.removeClass('black');
       $hamBtn.removeClassClass('black');
@@ -58,8 +49,9 @@ $(function(){
       $rMenu.removeClass('black');
       $topBtn.removeClass('black');
     }
+    });
     
-  });
+  });*/
   
   /*$(window).scroll(function(){
     
@@ -92,7 +84,7 @@ $(function(){
   
   $win.trigger('scroll');
     
-  /*$(window).on('scroll', function(){
+  $(window).on('scroll', function(){
     
     if ($(window).scrollTop = ('#community')) {
       $logo.addClass('black');
@@ -110,25 +102,6 @@ $(function(){
     }
     
   });
-  */
   
-  /*$(window).on('scroll', function(){
-    
-    if ($(window).scrollTop = ('#family')) {
-      $logo.removeClass('black');
-      $gnb.removeClass('black');
-      $hamBtn.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    } else {
-      $logo.removeClass('black');
-      $side.removeClass('black');
-      $hamBtn.removeClassClass('black');
-      $gnb.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    }
-    
-  });*/
   
 });

@@ -475,6 +475,7 @@ header .h-fix .logo-m {
 #visual {
   position: relative;
   height: 916px;
+/*  height: 100%;*/
   background: #0B0D0C ;
   border-top: 4px solid #ec2024;
 }
