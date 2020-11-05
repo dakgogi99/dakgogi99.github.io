@@ -1,7 +1,7 @@
 $(function(){
     var swiper = new Swiper('.swiper-container-p', {
       slidesPerView: 2,
-      spaceBetween: "5%",
+      spaceBetween: '500%',
       // init: false,
       pagination: {
         el: '.swiper-pagination',
@@ -10,7 +10,9 @@ $(function(){
       breakpoints: {
         639: {
           slidesPerView: 2,
+//          slidesOffsetAfter: '500px',
           spaceBetween: "200%",
+//          spaceBetween: "150px",
         },
         /*768: {
           slidesPerView: 3,
