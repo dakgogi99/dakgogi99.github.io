@@ -492,7 +492,7 @@ header option {
   height: 500px;
   overflow: hidden;
 }
-.swiper-container .swiper-wrapper a {
+.archive .swiper-container .swiper-wrapper a {
   width: 280px;
   height: 280px;
   display: block;
@@ -501,11 +501,11 @@ header option {
   margin-top: 20px;
   transition: all 1s
 }
-.swiper-container .swiper-wrapper a:hover {
+.archive .swiper-container .swiper-wrapper a:hover {
   transform: scale(1.1)
 }
 
-.swiper-container .a-img01 span {
+.archive .swiper-container .a-img01 span {
   display: block;
   width: 270px;
   height: 270px;
@@ -513,70 +513,70 @@ header option {
   overflow: hidden;
   background: url(../img/archive-img01.png) no-repeat center center / cover
 }
-.swiper-container .a-img02 span {
+.archive .swiper-container .a-img02 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img02.png) no-repeat center center / cover
 }
-.swiper-container .a-img03 span {
+.archive .swiper-container .a-img03 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img03.png) no-repeat center center / cover
 }
-.swiper-container .a-img04 span {
+.archive .swiper-container .a-img04 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img04.png) no-repeat center center / cover
 }
-.swiper-container .a-img05 span {
+.archive .swiper-container .a-img05 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img05.png) no-repeat center center / cover
 }
-.swiper-container .a-img06 span {
+.archive .swiper-container .a-img06 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img06.jpg) no-repeat center center / cover
 }
-.swiper-container .a-img07 span {
+.archive .swiper-container .a-img07 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img07.jpg) no-repeat center center / cover
 }
-.swiper-container .a-img08 span {
+.archive .swiper-container .a-img08 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img08.jpg) no-repeat center center / cover
 }
-.swiper-container .a-img09 span {
+.archive .swiper-container .a-img09 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img09.jpg) no-repeat center center / cover
 }
-.swiper-container .a-img10 span {
+.archive .swiper-container .a-img10 span {
   display: block;
   width: 270px;
   height: 270px;
   border-radius: 270px;
   background: url(../img/archive-img10.jpg) no-repeat center center / cover
 }
-.swiper-container p {
+.archive .swiper-container .swiper-slide p {
   width: 270px;
   font-size: 18px;
   font-weight: normal;
@@ -1195,9 +1195,9 @@ footer address {
     top: 0px;
     left: 40px;
   }
-  .program .swiper-wrapper {
+  .program .swiper-container-p .swiper-wrapper {
     display: block;
-    width: 4000px;
+    width: 8000px;
     height: 370px;
     overflow: hidden;    
   }
@@ -1329,7 +1329,7 @@ footer address {
     top: 360px;
   }
   .archive .swiper-container {
-    left: 60px;
+/*    left: 60px;*/
 /*    margin-left: -250px;*/
     position: relative;
     margin-top: 200px;
@@ -1341,7 +1341,7 @@ footer address {
 /*    width: 2200px;*/ 
     width: 4400px;
     height: 500px;
-    padding-left: 30px;
+    padding-left: 60px;
   }
   .swiper-container-m .swiper-wrapper a {
     width: 180px;

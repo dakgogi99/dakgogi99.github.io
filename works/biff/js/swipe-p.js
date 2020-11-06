@@ -2,12 +2,8 @@ $(function(){
   
   var swiper = new Swiper('.swiper-container-p', {
       slidesPerView: 1,
-      spaceBetween: '200%',
+      spaceBetween: '100%',
       // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       breakpoints: {
         639: {
           slidesPerView: 2,
