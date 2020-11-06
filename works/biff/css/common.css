@@ -1491,7 +1491,7 @@ footer address {
     box-sizing: border-box;
   }
   .biffsalon {
-    height: 750px;
+    height: 700px;
     background: #eee;  
   }
   .biffsalon .b-txt {
@@ -1527,6 +1527,16 @@ footer address {
   }
   .biffsalon .snb-m select:focus {
     outline: none
+  }
+  .biffsalon .swiper-container-b {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 300px;
+    width: 95%;
+    height: 320px;
+    margin: auto;
+    box-sizing: border-box;
   }
   footer {
     position: relative;
