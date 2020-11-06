@@ -19,7 +19,7 @@ $(function(){
     $image.hide();
       
     function slideShow(love) {
-      $image.fadeOut('fast');
+      $image.fadeOut('slow');
       $image.eq(love).fadeIn('slow');
       
       currentIndex = love;

@@ -341,9 +341,19 @@ header .gnb {
   height: 64px;
   text-align: center;
   background: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   overflow: hidden;
-/*  opacity: 0.7*/
+  filter: brightness(60%);
+  transition: .3s ease;
+/*  transition-duration: .3s, 1.5s;*/
+  
+  cursor: pointer;
+  transition: all 0.3s ease
+}
+.sum-list ul li.on {
+  filter: brightness(100%);
+  border: 1px solid #fff;  
+/*  filter: grayscale(0);*/
 }
 .sum-list ul li:not(last-child) {
   margin-bottom: 10px
