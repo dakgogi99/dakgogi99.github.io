@@ -2,6 +2,11 @@ $(function(){
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: '5%',
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       // init: false,
       pagination: {
         el: '.swiper-pagination',

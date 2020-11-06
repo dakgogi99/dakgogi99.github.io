@@ -3,6 +3,11 @@ $(function(){
   var swiper = new Swiper('.swiper-container-p', {
       slidesPerView: 1,
       spaceBetween: '100%',
+      loop: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       // init: false,
       breakpoints: {
         639: {

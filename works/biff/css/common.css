@@ -149,9 +149,9 @@ header option {
 
 /*프로그램*/
 .program {
-  background:#fff url(../img/program-bg.png) no-repeat;
-  background-position: left top;
-  height: 700px;
+  /*background:#fff url(../img/program-bg.png) no-repeat;*/
+  background:#eae8e8;
+  height: 900px;
   margin: auto;
    
   overflow: hidden;
@@ -161,7 +161,7 @@ header option {
 }
 .program .p-txt {
   position: absolute;
-  padding-top: 190px;
+  padding-top: 350px;
   padding-left: 190px;
   box-sizing: border-box;
 }
@@ -201,7 +201,7 @@ header option {
 .program .wrap {
   position: relative;
   left: 550px;
-  top: 160px;
+  top: 250px;
   width: 70%;
   height: 500px;
   overflow: hidden
@@ -214,7 +214,7 @@ header option {
   height: 100%
 }
 .program .swiper-wrapper {
-  width: 4000px;
+  width: 8000px;
   height: 450px;
   overflow: hidden;
 }
@@ -487,7 +487,7 @@ header option {
   height: 500px;*/
 }
 .archive .swiper-wrapper {
-  width: 5500px;
+  width: 8000px;
   height: 500px;
   overflow: hidden;
 }
