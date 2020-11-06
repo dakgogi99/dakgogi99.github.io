@@ -230,27 +230,26 @@ header option {
   transform: scale(1.05)
 }
 .swiper-slide {
-   Center slide text vertically 
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .program .swiper-wrapper .swiper-slide {
   position: relative;
   width: 300px;
   height: 400px;
-  margin-right: 20px;
+/*  margin-right: 20px;*/
   box-sizing: border-box;
-  box-shadow: 10px 10px 15px #dbd9d9;
+/*  box-shadow: 10px 10px 15px #dbd9d9;*/
 }
 .program .swiper-wrapper .swiper-slide img {
   width: 300px;
@@ -932,22 +931,31 @@ footer address {
   .archive .a-txt {
     padding-left: 120px;
   }
-  .archive .swiper-container-t {
+  .archive .swiper-container {
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
     width: 100%;
     height: 100%;
 /*    margin-left: 120px;*/
     box-sizing: border-box;
   }
+  .archive .swiper-container .swiper-wrapper {
+    padding-left: 30px
+  }
   .biffsalon .b-txt {}
   .foot-con .spon {
-    width: 800px;
+    width: 90%;
+    margin-left: 5%;
   }
   .foot-con .spon a {
-    width: 150px;
-    height: 50px;
-    margin: 50px 25px;
+    display: block;
+    width: 23%;
+/*    width: 150px;*/
+/*    height: 50px;*/
+    margin: 50px 5px;
+  }
+  .foot-con .spon a img {
+    width: 80%
   }
   footer .company {
     left: 60px;
@@ -1339,7 +1347,7 @@ footer address {
   }
   .archive .swiper-wrapper {
 /*    width: 2200px;*/ 
-    width: 4400px;
+    width: 8000px;
     height: 500px;
     padding-left: 60px;
   }

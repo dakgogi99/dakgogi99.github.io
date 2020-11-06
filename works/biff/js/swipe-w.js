@@ -17,7 +17,7 @@ $(function(){
           spaceBetween: '1%',
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: '270%',
         },
       }

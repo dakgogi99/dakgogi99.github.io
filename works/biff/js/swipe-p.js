@@ -11,11 +11,11 @@ $(function(){
           spaceBetween: "200%",
 //          spaceBetween: "150px",
         },
-        /*768: {
-          slidesPerView: 3,
-          spaceBetween: "5%",
-        },*/
-        1000: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: "200%",
+        },
+        1024: {
           slidesPerView: 3,
           spaceBetween: "10%",
         },
