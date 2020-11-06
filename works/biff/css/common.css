@@ -1343,13 +1343,12 @@ footer address {
     height: 500px;
     padding-left: 60px;
   }
-  .swiper-container-m .swiper-wrapper a {
+  .archive .swiper-container .swiper-wrapper .swiper-slide {
     width: 180px;
     height: 180px;
     display: block;
     margin: 0;
     margin-top: 20px;
-    padding: 0 40px;
   }
   .a-img-ms .a-img01 span,
   .a-img-ms .a-img02 span,
@@ -1364,7 +1363,6 @@ footer address {
     font-size: 20px;
     color: #fff;
     text-align: center;
-    padding-left: 30px;
     margin-top: 20px;
     line-height: 1.5;
     box-sizing: border-box;
