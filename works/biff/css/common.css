@@ -480,7 +480,8 @@ header option {
   position: relative;
   padding-left: 190px;
   width: 100%;
-  height: 100%;
+  height: 450px;
+/*  height: 100%;*/
   box-sizing: border-box;
 /*  overflow: hidden;*/
   /*width: 280px;
@@ -642,6 +643,120 @@ header option {
 .biffsalon .snb-m {
   display: none
 }
+/*글상자*/
+.biffsalon .swiper-container-b {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 350px;
+  width: 95%;
+  height: 320px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.swiper-container-b .b-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.biffsalon .swiper-container-b .swiper-wrapper {
+  width: 8000px;
+  height: 350px;
+}
+.biffsalon .swiper-slide {
+  text-align: center;
+  width: 270px;
+  height: 320px;
+  background: #f7f7fd;
+  border: 1px solid #d5deee;
+  box-sizing: border-box;
+
+  /* Center slide text vertically */
+  /*display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;*/
+}
+.biffsalon .swiper-slide {
+  padding: 30px 15px 0 20px;
+  position: relative;
+  overflow: hidden
+}
+.biffsalon .swiper-slide .biff-review {
+  position: relative;
+}
+.biffsalon .swiper-slide {}
+.biffsalon .swiper-slide .cate {
+  text-align: left;
+  font-size: 13px;
+  color: #777777
+}
+.biffsalon .swiper-slide h4 {
+  text-align: left;
+  display: block;
+  font-size: 25px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 240px;
+  padding: 10px 0 30px 0
+}
+.biffsalon .swiper-slide .txt-con {
+  display: block;
+  width: 240px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.2;
+  color: #262322;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.biffsalon .swiper-slide .nick {
+  text-align: left;
+  font-size: 15px;
+  color: #4d44dd;
+  padding: 30px 0 20px 0;
+}
+.biffsalon .swiper-slide a {
+  display: block;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  background: #4d44dd;
+  margin-bottom: 27px
+}
+.biffsalon .swiper-slide:hover {
+  background: #4d44dd
+}
+.biffsalon .swiper-slide:hover .cate,
+.biffsalon .swiper-slide:hover h4,
+.biffsalon .swiper-slide:hover .txt-con,
+.biffsalon .swiper-slide:hover .nick {
+  color: #fff
+}
+.biffsalon .swiper-slide:hover a {
+  color: #4d44dd;
+  background: #fff
+}
+/*.biffsalon .swiper-button-next {
+  padding: 0 20px;
+  color: #4d44dd;
+}
+.biffsalon .swiper-button-prev {
+  padding-left: 20px;
+  color: #4d44dd;
+}*/
 /*풋터*/
 footer {
   position: relative;
