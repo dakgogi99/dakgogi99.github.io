@@ -18,7 +18,7 @@ $(function(){
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: '4%',
+          spaceBetween: '270%',
         },
       }
     });
