@@ -653,6 +653,7 @@ header option {
   height: 320px;
   margin: auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .swiper-container-b .b-wrap {
   width: 100%;
@@ -661,6 +662,7 @@ header option {
 .biffsalon .swiper-container-b .swiper-wrapper {
   width: 8000px;
   height: 350px;
+  overflow: hidden
 }
 .biffsalon .swiper-slide {
   text-align: center;
@@ -1048,14 +1050,14 @@ footer address {
   }
   .archive .swiper-container {
     position: relative;
-    padding-left: 30px;
+    padding-left: 20px;
     width: 100%;
     height: 100%;
 /*    margin-left: 120px;*/
     box-sizing: border-box;
   }
   .archive .swiper-container .swiper-wrapper {
-    padding-left: 30px
+    padding-left: 20px
   }
   .biffsalon .b-txt {}
   .foot-con .spon {
@@ -1533,10 +1535,13 @@ footer address {
     left: 0;
     right: 0;
     top: 300px;
-    width: 95%;
+    width: 80%;
     height: 320px;
     margin: auto;
     box-sizing: border-box;
+  }
+  .biffsalon .swiper-slide {
+     padding: 0;
   }
   footer {
     position: relative;
