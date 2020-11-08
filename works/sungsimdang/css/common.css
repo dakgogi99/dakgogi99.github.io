@@ -570,7 +570,7 @@ header .h-fix .logo-m {
 #menu {
   background: #ccc;
 }
-#menu .title {
+.menu-con .title {
   position: relative;
   left: 0;
   right: 0;
@@ -579,18 +579,134 @@ header .h-fix .logo-m {
   
   width: 434px
 }
-#menu .title img {
+.menu-con .title img {
   display: block;
   float: left;
   width: 245px;
   height: 100%;
 }
-#menu .title h2 {
+.menu-con .title h2 {
   font-size: 25px;
   font-weight: bold;
   color: #ec2024;
   padding-top: 80px;
   padding-left: 262px;
+}
+.menu-con .menu {
+  position: relative;
+  top: 380px;
+}
+.menu-con .menu .slide {
+  position: absolute;
+  left: 18%;
+  width: 82%;
+  height: 300px
+}
+.menu-con .slide .m1,
+.menu-con .slide .m2,
+.menu-con .slide .m3 {
+  float: left;
+}
+.menu-con .slide .m1,
+.menu-con .slide .m2 {
+  margin-right: 7%;
+}
+.menu-con .slide .m4,
+.menu-con .slide .m5 {
+  margin-right: 4%;
+}
+.menu-con .slide .m1 a,
+.menu-con .slide .m2 a,
+.menu-con .slide .m3 a {
+  height: 250px;
+  display: block;
+}
+.slide .m1 img,
+.slide .m2 img,
+.slide .m3 img,
+.slide .m4 img {
+  height: 100%;
+  margin: auto
+}
+,
+.slide .m3 a {
+  height: 180px;
+}
+.slide .m3 img {
+  height: 180px;
+  padding-top: 30px;
+  
+}
+.slide .m1 p,
+.slide .m2 p,
+.slide .m3 p,
+.slide .m4 p,
+.slide .m5 p,
+.slide .m6 p {
+  position: absolute;
+  bottom: 0;
+  font-size: 23px;
+  text-align: center;
+}
+.slide .m1 p {
+  margin-left: 112px
+}
+.slide .m2 p {
+  margin-left: 115px
+}
+.slide .m3 p {
+  margin-left: 145px
+}
+.slide .m4 p {
+  margin-left: 147.5px
+}
+.slide .m5 p {
+  margin-left: 127.5px
+}
+.slide .m6 p {
+  margin-left: 127.5px
+}
+
+.menu-con .slide .m4,
+.menu-con .slide .m5,
+.menu-con .slide .m6 {
+  float: left;
+}
+.menu-con .menu .slide {
+  display: none
+}
+/*
+.menu-con .slide.love {
+  display: block;
+}
+*/
+/*indicator*/
+.menu-con .indicator {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  
+  text-align: center;
+}
+.menu-con .indicator a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding: 0 10px;
+  
+  overflow: hidden;
+}
+.menu-con .indicator a.on {
+  cursor: default
+}
+.menu-con .indicator a:after {
+  content: url(../img/indicator.png);
+  margin-left: -100px
+}
+.menu-con .indicator a.on:after {
+  margin-left: -132px
 }
 
 /*brand*/
@@ -599,7 +715,6 @@ header .h-fix .logo-m {
 }
 #brand .bg-p {
   position: relative;
-  background: url(../img/section02_bg.png);
   opacity: 0.1;
   width: 100%;
   height: 100%;
