@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /*고정메뉴*/
+
 header .h-fix .logo {
   display: none;
 }
@@ -32,10 +33,11 @@ header .logo-m {
 
 /*햄버거 메뉴*/
 .h-fix .ham-btn {
+  position: fixed;
   top: 25px;
   right: 10px;
   border: 1px solid #fff;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 /*햄버거 메뉴 on 할때 전체 메뉴*/
@@ -90,6 +92,7 @@ header .logo-m {
 
 /*탑버튼*/
 .top-btn {
+  position: fixed;
   bottom: 25px;
   right: 10px;
 }
@@ -438,7 +441,7 @@ header .logo-m {
 }
 .mobile .board a {
   display: block;
-  width: 440px;
+/*  width: 440px;*/
   height: 40px
 }
 .mobile .board a p {
@@ -503,7 +506,7 @@ header .logo-m {
   top: 157px;
   margin: auto;
   
-  width: 169px
+  width: 170px;
 }
 .title-m img {
   display: block;
@@ -546,7 +549,7 @@ header .logo-m {
 }
 #family footer .com {
   height: 230px;
-  background: url(../img/footer_pt.png) no-repeat;
+  background: none;
 }
 .com .f-logo {
   width: 150px;
