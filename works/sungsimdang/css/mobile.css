@@ -173,33 +173,173 @@ header .logo-m {
 }
 
 /*menu*/
-#menu {
+.menu-con {
   background: #fff;
   position: relative;
   height: 800px;
   top: 0px;
 }
-#menu .title {
+.menu-con .title {
   position: relative;
   left: 0;
   right: 0;
-  top: 95px;
+  top: 40px;
   margin: auto;
   
   width: 198px
 }
-#menu .title img {
+.menu-con .title img {
   display: block;
   float: none;
   width: 198px;
   height: 100%;
 }
-#menu .title h2 {
+.menu-con .title h2 {
   font-size: 25px;
   font-weight: bold;
   color: #ec2024;
   padding-top: 0px;
-  padding-left: 60px;
+  padding-left: 50px;
+}
+.menu-con .menu {
+  top: 100px;
+}
+.menu-con .menu .slide {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+}
+.menu-con .slide .m1,
+.menu-con .slide .m2,
+.menu-con .slide .m3 {
+  float: none;
+}
+.menu-con .slide .m4,
+.menu-con .slide .m5,
+.menu-con .slide .m6 {
+  float: none;
+}
+.menu-con .slide .m1 a,
+.menu-con .slide .m2 a,
+.menu-con .slide .m3 a,
+.menu-con .slide .m4 a,
+.menu-con .slide .m5 a,
+.menu-con .slide .m6 a {
+  width: 240px;
+  display: block;
+}
+.menu-con .slide .m1 a,
+.menu-con .slide .m4 a {
+  position: absolute;
+  left: 0;
+  display: block;
+}
+.menu-con .slide .m1 p,
+.menu-con .slide .m4 p {
+  position: absolute;
+  top: 60px;
+  left: 240px;
+  text-align: left;
+  display: block;
+}
+.menu-con .slide .m1 .desc,
+.menu-con .slide .m4 .desc {
+  position: absolute;
+  top: 80px;
+  left: 240px;
+  text-align: left;
+  font-weight: bold;
+  margin-right: 80px;
+  display: block;
+}
+.menu-con .slide .m3 a,
+.menu-con .slide .m6 a {
+  position: absolute;
+  left: 0;
+  top: 300px;
+  display: block;
+}
+.menu-con .slide .m3 p,
+.menu-con .slide .m6 p {
+  position: absolute;
+  top: 370px;
+  left: 240px;
+  text-align: left;
+  display: block;
+}
+.menu-con .slide .m3 .desc,
+.menu-con .slide .m6 .desc {
+  position: absolute;
+  top: 390px;
+  left: 240px;
+  font-weight: bold;
+  text-align: left;
+  font-weight: bold;
+  display: block;
+}
+.menu-con .slide .m2 a,
+.menu-con .slide .m5 a {
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+.menu-con .slide .m2 p,
+.menu-con .slide .m5 p {
+  position: absolute;
+  top: 230px;
+  right: 230px;
+  text-align: right;
+  display: block;
+}
+.menu-con .slide .m2 .desc,
+.menu-con .slide .m5 .desc {
+  position: absolute;
+  top: 250px;
+  font-weight: bold;
+  right: 230px;
+  text-align: right;
+  display: block;
+}
+/*.menu-con .slide .m1 a,
+.menu-con .slide .m2 a,
+.menu-con .slide .m4 a,
+.menu-con .slide .m5 a {
+  margin-bottom: 20px;
+}*/
+
+.menu-con .slide .m1 img,
+.menu-con .slide .m2 img,
+.menu-con .slide .m3 img,
+.menu-con .slide .m4 img,
+.menu-con .slide .m5 img,
+.menu-con .slide .m6 img {
+  width: 100%;
+  display: block;
+}
+.slide .m1 p,
+.slide .m2 p,
+.slide .m3 p,
+.slide .m4 p,
+.slide .m5 p,
+.slide .m6 p {
+  font-size: 22px;
+}
+.slide .m1 .desc,
+.slide .m2 .desc,
+.slide .m3 .desc,
+.slide .m4 .desc,
+.slide .m5 .desc,
+.slide .m6 .desc {
+  position: absolute;
+  display: block;
+  top: 340px;
+  font-size: 14px;
+  padding-top: 5px;
+  color: #ec2024;
+  background: none;
+  margin: 0;
 }
 
 /*brand*/

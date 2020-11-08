@@ -1,6 +1,6 @@
 $(function(){
   
-  $('.menu-con').each(function(){
+  $('main .menu-con').each(function(){
     
     var $slideBox = $(this),
         $slide = $slideBox.find('.menu'),
@@ -77,14 +77,14 @@ $(function(){
     }
     
     /*멈추게 하는 함수 만들기*/      
-    function stopTimer () {
+   /* function stopTimer () {
       clearInterval(timer)
     }
-    $slideBox
+    $slide
       .on({
         mouseenter: stopTimer,
         mouseleave: startTimer
-      })
+      })*/
     
     /*함수 실행(호출)*/
     slideShow(currentIndex);
