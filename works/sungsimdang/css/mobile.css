@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 /*고정메뉴*/
-
+body {
+  width: 100%
+}
 header .h-fix .logo {
   display: none;
 }
@@ -422,8 +424,9 @@ header .logo-m {
 #community .mobile {
   display: block;
   position: relative;
-  height: 375px;
-  background: url(../img/section03_img_m.png)
+  height: 380px;
+  overflow: hidden
+/*  background: url(../img/section03_img_m.png) */
 }
 #community .mobile .board {
   position: absolute;
@@ -481,7 +484,10 @@ header .logo-m {
 .mobile .board-sns a:not(last-child) {
   margin-right: 20px
 }
-
+#community .mobile img {
+  width: 100%;
+  display: block;
+}
 /*family*/
 #family {
   position: relative;
