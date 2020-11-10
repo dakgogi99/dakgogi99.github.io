@@ -476,9 +476,11 @@ header .logo-m {
   display: block;
   float: left;
   height: 30px;
+  width: auto
 }
 .mobile .board-sns a img {
-  height: 100%
+  height: 100%;
+  width: auto
 }
 .mobile .board-sns a:not(last-child) {
   margin-right: 20px
