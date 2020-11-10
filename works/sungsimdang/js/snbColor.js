@@ -1,116 +1,105 @@
 $(function(){
   
-//  var winH = $(window).height(),
-//      $main = $('main'),
-//      $menu = $main.find('#menu'),
-//      $brand = $main.find('#brand'),
-//      $community = $main.find('#community'),
-//      $family = $main.find('#family'),
-//      $side = $main.find('.side'),
-//      $logo = $main.find('.logo'),
-//      $gnb = $main.find('.gnb'),
-//      $hamBtn = $main.find('.ham-btn'),
-//      $rMenu = $main.find('.r-menu'),
-//      $topBtn = $main.find('.top-btn'),
-//      $section = $main.find('.content'),
-//      $menuH = $menu.offset().top,
-//      $brandH = $brand.offset().top,
-//      $communityH = $community.offset().top,
-//      $familyH = $family.offset().top;
-  
-    var $main = $('main'),
-        $menu = $main.find('#manu'),
-        $brand = $main.find('#brand');
-  
-  $($menu).css({
-    
-    
-    
-  });
-    
-  /*$(window).ready(function(){
-    
-    $(wiindow).scroll(function(){
+  var $main = $('body'),
+      $visual = $main.find('.visual-con'),
+      $menu = $main.find('.menu-con'),
+      $brand = $main.find('.brand-con'),
+      $community = $main.find('.community-con'),
+      $family = $main.find('.family-con'),
+      $side = $main.find('.side'),
+      $logo = $main.find('.logo'),
+      $gnb = $main.find('.gnb'),
+      $hamBtn = $main.find('.ham-btn'),
+      $rMenu = $main.find('.r-menu'),
+      $topBtn = $main.find('.top-btn');
       
-      var winH = $(window).height(),
-      scrollTop = $(window).scrollTop() + winH / 2;
-      
-      if(scrollTop < $menuH ){
-        $logo.fadeOut('black');
-        $side.fadeOut('black');
-        $hamBtn.fadeOut('black');
-        $gnb.fadeOut('black');
-        $rMenu.fadeOut('black');
-        $topBtn.fadeOut('black');
-        
-      } else if (scrollTop < $familyH){
-        $logo.addClass('black');
-        $side.addClass('black');
-        $hamBtn.addClass('black');
-        $gnb.addClass('black');
-        $rMenu.addClass('black');
-        $topBtn.addClass('black');       
-      } else {
-      $logo.removeClass('black');
-      $side.removeClass('black');
-      $hamBtn.removeClassClass('black');
-      $gnb.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    }
-    });
-    
-  });*/
   
-  /*$(window).scroll(function(){
+  /*$gnb.on('click', 'li a', function(e){
     
     var winH = $(window).height(),
-      scrollTop = $(window).scrollTop() + winH / 2,
-      count = $section.length;
+        aIndex = $(this).parent().index(),
+        posY = winH * aIndex;
     
-    for (var i = 0; i < count, i > 1; i++) {
-      if (winH * i <= scrollTop && winH * (i+1) > scrollTop) {
+    $('html, body').stop().animate({
+      scrollTop: posY
+    }, sp, easing)
+    
+  });
+  
+  //스크롤 시 위, 아래로 화면이동시키기
+  $section.on('mousewheel', function(e, delta){
+   e.preventDefault();
+   
+   var sIndex = $(this).index(),
+       first = 0,
+       last = $section.length - 1;
+   
+   if(delta > 0 && sIndex != first) {
+     var before = $(this).prev().offset().top;
+     
+     $('html, body').stop().animate({
+       scrollTop: before
+     }, sp, easing)
+         
+   } else if(delta < 0 && sIndex != last) {
+     var after = $(this).next().offset().top;
+     
+     $('html, body').stop().animate({
+       scrollTop: after
+     }, sp, easing)
+     
+   }
+   
+ });*/
+  
+  
+  //스크롤바 상단 값에 해당하는 gnb 앵커 활성화
+  $(window).on('scroll', function(){
+    var winH = $(window).height(),
+        scrollTop = $(window).scrollTop() + winH/2,
+        menuH = $menu.offset().top,
+        brandH = $brand.offset().top,
+        communityH = $community.offset().top,
+        familyH = $family.offset().top;
+    
+    if(scrollTop >= menuH && scrollTop < brandH){
       $logo.addClass('black');
       $side.addClass('black');
-      $hamBtn.addClass('black');
       $gnb.addClass('black');
-      $rMenu.addClass('black');
-      $topBtn.addClass('black');
-      } else {
-      $logo.removeClass('black');
-      $side.removeClass('black');
-      $hamBtn.removeClassClass('black');
-      $gnb.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-      }
-    }
-        
-  });*/
-  
-  
-  
-  
-  /*$win.trigger('scroll');
-    
-  $(window).on('scroll', function(){
-    
-    if ($(window).scrollTop = ('#community')) {
+      $hamBtn.addClass('bgblack');
+      $rMenu.addClass('bgblack');
+      $topBtn.addClass('bgblack');
+      } else if(scrollTop >= brandH && scrollTop < communityH) {
+      $rMenu.removeClass('bgblack');
+      $hamBtn.removeClass('bgblack');
+      $topBtn.removeClass('bgblack');
       $logo.addClass('black');
+      $side.addClass('black');
       $gnb.addClass('black');
-      $hamBtn.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    } else {
-      $logo.removeClass('black');
-      $side.removeClass('black');
-      $hamBtn.removeClassClass('black');
-      $gnb.removeClass('black');
-      $rMenu.removeClass('black');
-      $topBtn.removeClass('black');
-    }
-    
-  });*/
+      $rMenu.addClass('black'); 
+      $hamBtn.addClass('black');
+      $topBtn.fadeIn();
+      $topBtn.addClass('black'); 
+      } else if(scrollTop >= communityH && scrollTop < familyH) {
+      $logo.addClass('black');
+      $side.addClass('black');
+      $gnb.addClass('black');
+      $rMenu.addClass('bgblack');
+      $hamBtn.addClass('bgblack');
+      $topBtn.fadeOut();
+      } else {
+        $side.removeClass('black');
+        $logo.removeClass('black');
+        $gnb.removeClass('black');
+        $hamBtn.removeClass('black');
+        $rMenu.removeClass('black');
+        $topBtn.removeClass('black');
+        $hamBtn.removeClass('bgblack');
+        $rMenu.removeClass('bgblack');
+        $topBtn.removeClass('bgblack');
+        $topBtn.fadeIn();
+      }
+  });
   
   
 });
