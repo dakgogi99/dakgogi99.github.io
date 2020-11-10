@@ -22,8 +22,6 @@
       
       $conDetail.removeClass('on');
       $conDetail.eq(i).addClass('on');*/
-      
-       
     }); 
       
     $('.tabs li:first-child a').trigger('click');
