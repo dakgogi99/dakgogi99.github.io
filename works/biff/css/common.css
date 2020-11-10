@@ -923,6 +923,24 @@ footer address {
   margin-left: -192px;
 */
 }
+/*스크롤바 디자인하기
+width, track, handle, hover
+*/
+::-webkit-scrollbar {
+  width: 15px
+}
+
+::-webkit-scrollbar-track {
+  color: #c9cece;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d44dd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f51bc9
+}
 
 /*미디어쿼리*/
 /*tablet 640-1024*/

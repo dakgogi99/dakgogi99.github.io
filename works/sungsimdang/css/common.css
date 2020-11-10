@@ -736,30 +736,33 @@ header .h-fix .logo-m {
 
 .b-con .b-con-r .more-btn {
   float: left;
-  background: #000;
-  width: 44px;
-  height: 44px;
-  border-radius: 30px;
-  border: 2px solid #fff
+/*  border: 2px solid #fff*/
 }
 .b-con-r .more-btn a {
-  width: 44px;
-  height: 44px;
+  background: #000;
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
   display: block;
 }
 .b-con-r .more-btn a i {
   color: #fff;
-  font-size: 20px;
-  padding-top: 12px;
-  padding-left: 12px
+  font-size: 16px;
+  padding-top: 9px;
+  padding-left: 10px
 }
-
+.b-con-r .more-btn a:hover {
+  background: #fff;
+}
+.b-con-r .more-btn a:hover i {
+  color: #000
+}
 .b-con .b-con-r .btn-txt {
   left: 0;
   font-size: 16.5px;
   font-weight: bold;
-  padding-top: 13.75px;
-  padding-left: 54px
+  padding-top: 8px;
+  padding-left: 45px
 }
 
 /*community*/
@@ -767,13 +770,94 @@ header .h-fix .logo-m {
   display: none
 }
 #community .web {
-  display: block;
-  background: #999
-}
-#community .web .bg-c {
   position: relative;
-  width: 100%;
+  display: block;
+  background: #fff;
   height: 100%;
+}
+#community .web .bg-icon {
+  position: absolute;
+/*  right: 150px;*/
+  right: 0px;
+  bottom: 0;
+  width: ;
+}
+#community .web .bg-board {
+  position: absolute;
+  top: 345px;
+  left: 50%;
+  margin-left: -585px;
+  background: #ffc74a;
+  width: 1170px;
+  height: 400px;
+}
+.bg-board .board:first-child {
+  position: absolute;
+  width: 585px;
+  height: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.bg-board .board:last-child {
+  position: absolute;
+  left: 585px;
+  width: 585px;
+  height: 400px;
+  padding: 30px;
+  box-sizing: border-box
+}
+.bg-board .board h4 {
+  font-size: 25px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+.bg-board .board .more-btn {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+.bg-board .board .more-btn a {
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: #000;
+  padding: 0 8px;
+  line-height: 30px;
+  box-sizing: border-box
+}
+.bg-board .board .more-btn a:hover {
+  color: #000;
+  background: #fff;
+}
+.bg-board .board ul {
+  border-top: 2px solid #000;
+  padding-top: 55px;
+}
+/*.board ul li {
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}*/
+.board ul li a {
+  font-size: 19px;
+  line-height: 30px;
+}
+.board ul li a span {
+  display: inline-block;
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.board ul li a time {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
 }
 
 /*family*/
@@ -908,13 +992,13 @@ header .h-fix .logo-m {
 
 /*footer*/
 #family footer {
-  height: 343px;
+/*  height: 300px;*/
   width: 100%;
   background: #ec2024
 }
 #family footer .com {
   height: 293px;
-  background: url(../img/footer_pt.png) no-repeat;
+/*  background: url(../img/footer_pt.png) no-repeat;*/
 }
 .com .f-logo {
   width: 185px;
@@ -944,7 +1028,24 @@ header .h-fix .logo-m {
   padding-top: 18px;
 }
 
+/*스크롤바 디자인하기
+width, track, handle, hover
+*/
+::-webkit-scrollbar {
+  width: 15px
+}
 
+::-webkit-scrollbar-track {
+  color: #c9cece;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec2024
+}
 
 
 
