@@ -854,6 +854,9 @@ header .h-fix .logo-m {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.board ul li a:hover span {
+  color: #fff
+}
 .board ul li a time {
   display: inline-block;
   position: absolute;
