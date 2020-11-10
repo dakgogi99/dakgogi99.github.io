@@ -691,6 +691,7 @@ header .h-fix .logo-m {
   display: block;
   width: 200px;
   height: 26px;
+  border-radius: 20px;
   top: 340px;
 /*  left: 50%;*/
   margin-left: 120px;
@@ -913,6 +914,21 @@ header .h-fix .logo-m {
   display: inline-block;
   position: absolute;
   right: 30px;
+}
+#community .web .sns-icon {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -64.5px
+}
+#community .web .sns-icon a {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  height: 30px;
+}
+#community .web .sns-icon img {
+  height: 30px;
 }
 
 /*family*/
