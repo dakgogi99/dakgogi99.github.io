@@ -1,24 +1,33 @@
 $(function(){
   
-  var winH = $(window).height(),
-      $main = $('main'),
-      $menu = $main.find('#menu'),
-      $brand = $main.find('#brand'),
-      $community = $main.find('#community'),
-      $family = $main.find('#family'),
-      $side = $main.find('.side'),
-      $logo = $main.find('.logo'),
-      $gnb = $main.find('.gnb'),
-      $hamBtn = $main.find('.ham-btn'),
-      $rMenu = $main.find('.r-menu'),
-      $topBtn = $main.find('.top-btn'),
-      $section = $main.find('.content'),
-      $menuH = $menu.offset().top,
-      $brandH = $brand.offset().top,
-      $communityH = $community.offset().top,
-      $familyH = $family.offset().top;
-     
+//  var winH = $(window).height(),
+//      $main = $('main'),
+//      $menu = $main.find('#menu'),
+//      $brand = $main.find('#brand'),
+//      $community = $main.find('#community'),
+//      $family = $main.find('#family'),
+//      $side = $main.find('.side'),
+//      $logo = $main.find('.logo'),
+//      $gnb = $main.find('.gnb'),
+//      $hamBtn = $main.find('.ham-btn'),
+//      $rMenu = $main.find('.r-menu'),
+//      $topBtn = $main.find('.top-btn'),
+//      $section = $main.find('.content'),
+//      $menuH = $menu.offset().top,
+//      $brandH = $brand.offset().top,
+//      $communityH = $community.offset().top,
+//      $familyH = $family.offset().top;
   
+    var $main = $('main'),
+        $menu = $main.find('#manu'),
+        $brand = $main.find('#brand');
+  
+  $($menu).css({
+    
+    
+    
+  });
+    
   /*$(window).ready(function(){
     
     $(wiindow).scroll(function(){
@@ -82,7 +91,7 @@ $(function(){
   
   
   
-  $win.trigger('scroll');
+  /*$win.trigger('scroll');
     
   $(window).on('scroll', function(){
     
@@ -101,7 +110,7 @@ $(function(){
       $topBtn.removeClass('black');
     }
     
-  });
+  });*/
   
   
 });
