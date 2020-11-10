@@ -425,7 +425,6 @@ header .logo-m {
   display: block;
   position: relative;
   height: 380px;
-  overflow: hidden
 /*  background: url(../img/section03_img_m.png) */
 }
 #community .mobile .board {
@@ -486,7 +485,7 @@ header .logo-m {
 }
 #community .mobile img {
   width: 100%;
-  display: block;
+  height: 100%;
 }
 /*family*/
 #family {
