@@ -12,46 +12,7 @@ $(function(){
       $hamBtn = $main.find('.ham-btn'),
       $rMenu = $main.find('.r-menu'),
       $topBtn = $main.find('.top-btn');
-      
-  
-  /*$gnb.on('click', 'li a', function(e){
-    
-    var winH = $(window).height(),
-        aIndex = $(this).parent().index(),
-        posY = winH * aIndex;
-    
-    $('html, body').stop().animate({
-      scrollTop: posY
-    }, sp, easing)
-    
-  });
-  
-  //스크롤 시 위, 아래로 화면이동시키기
-  $section.on('mousewheel', function(e, delta){
-   e.preventDefault();
-   
-   var sIndex = $(this).index(),
-       first = 0,
-       last = $section.length - 1;
-   
-   if(delta > 0 && sIndex != first) {
-     var before = $(this).prev().offset().top;
-     
-     $('html, body').stop().animate({
-       scrollTop: before
-     }, sp, easing)
-         
-   } else if(delta < 0 && sIndex != last) {
-     var after = $(this).next().offset().top;
-     
-     $('html, body').stop().animate({
-       scrollTop: after
-     }, sp, easing)
-     
-   }
-   
- });*/
-  
+
   
   //스크롤바 상단 값에 해당하는 gnb 앵커 활성화
   $(window).on('scroll', function(){
