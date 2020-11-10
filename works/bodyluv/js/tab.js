@@ -26,8 +26,7 @@
        
     }); 
       
-//    $('.tabs li:first-child a').trigger('click');
-    location.reload();
+    $('.tabs li:first-child a').trigger('click');
         
     });
   
