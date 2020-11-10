@@ -450,6 +450,7 @@ header .h-fix .logo-m {
 /*탑버튼*/
 .top-btn {
   position: fixed;
+  display: none;
   right: 80px;
   bottom: 40px;
   width: 60px;

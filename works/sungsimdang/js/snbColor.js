@@ -24,6 +24,7 @@ $(function(){
         familyH = $family.offset().top;
     
     if(scrollTop >= menuH && scrollTop < brandH){
+      $topBtn.fadeIn();
       $logo.addClass('black');
       $side.addClass('black');
       $gnb.addClass('black');
@@ -48,7 +49,7 @@ $(function(){
       $rMenu.addClass('bgblack');
       $hamBtn.addClass('bgblack');
       $topBtn.fadeOut();
-      } else {
+      } else if(scrollTop >= familyH) {
         $side.removeClass('black');
         $logo.removeClass('black');
         $gnb.removeClass('black');
@@ -59,8 +60,19 @@ $(function(){
         $rMenu.removeClass('bgblack');
         $topBtn.removeClass('bgblack');
         $topBtn.fadeIn();
+      } else {
+        $side.removeClass('black');
+        $logo.removeClass('black');
+        $gnb.removeClass('black');
+        $hamBtn.removeClass('black');
+        $rMenu.removeClass('black');
+        $topBtn.removeClass('black');
+        $hamBtn.removeClass('bgblack');
+        $rMenu.removeClass('bgblack');
+        $topBtn.removeClass('bgblack');
+        $topBtn.fadeOut();
       }
+    
   });
-  
   
 });
