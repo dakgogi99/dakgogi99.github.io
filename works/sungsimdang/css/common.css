@@ -191,6 +191,15 @@ header .h-fix .logo-m {
 .ham-btn.black .ham-btn-off > div {
   background: #0B0D0C;
 }
+.h-fix .ham-btn:hover.black {
+  background: #0B0D0C;
+}
+.ham-btn:hover.black .ham-btn-on > div {
+  background: #fff;  
+}
+.ham-btn:hover.black .ham-btn-off > div {
+  background: #fff;
+}
 /*햄버거버튼 바탕블랙버전*/
 .h-fix .ham-btn.bgblack {
   background: #0B0D0C;
