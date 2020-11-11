@@ -629,7 +629,8 @@ header .h-fix .logo-m {
 
 /*menu*/
 .menu-con {
-  background: #f2f0f0;
+/*  background: #f2f0f0;*/
+  background: #fff;
 }
 .menu-con .title {
   position: relative;
@@ -1120,11 +1121,11 @@ width, track, handle, hover
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #ffc74a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ec2024
+  background: #0B0D0C
 }
 
 
