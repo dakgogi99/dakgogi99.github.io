@@ -77,14 +77,14 @@ $(function(){
     }
     
     /*멈추게 하는 함수 만들기*/      
-    function stopTimer () {
+    /*function stopTimer () {
       clearInterval(timer)
     }
     $slideBox
       .on({
         mouseenter: stopTimer,
         mouseleave: startTimer
-      })
+      })*/
     
     /*함수 실행(호출)*/
     slideShow(currentIndex);
@@ -170,14 +170,14 @@ $(function(){
     }
     
     /*멈추게 하는 함수 만들기*/      
-    function stopTimer () {
+   /* function stopTimer () {
       clearInterval(timer)
     }
     $slideBox
       .on({
         mouseenter: stopTimer,
         mouseleave: startTimer
-      })
+      })*/
     
     /*함수 실행(호출)*/
     slideShow(currentIndex);
